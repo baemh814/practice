@@ -204,14 +204,14 @@ const TRENDING_KEYWORDS = [
   "MCP 2.0"
 ];
 
-// Categories definition
+// Categories definition (Newspaper Sections)
 const CATEGORIES = [
-  { id: "all", label: "전체 소식", icon: "fa-solid fa-border-all" },
-  { id: "enterprise", label: "🏢 엔터프라이즈 AX", icon: "" },
+  { id: "all", label: "1면 종합", icon: "" },
+  { id: "enterprise", label: "🏢 기업·엔터프라이즈 AX", icon: "" },
   { id: "agents", label: "🤖 자율 에이전트", icon: "" },
   { id: "frontier", label: "⚡ 프론티어 기술", icon: "" },
-  { id: "industry", label: "🏭 산업별 도입 사례", icon: "" },
-  { id: "policy", label: "⚖️ 규제 및 거버넌스", icon: "" }
+  { id: "industry", label: "🏭 산업별 현장 사례", icon: "" },
+  { id: "policy", label: "⚖️ 거버넌스·규제", icon: "" }
 ];
 
 // ==========================================================================
@@ -438,11 +438,11 @@ function renderNewsGrid() {
         <div class="card-main">
           <h3 class="card-title">${item.title}</h3>
           
-          <!-- Why It Matters for AX -->
+          <!-- Editorial Column / Why It Matters -->
           <div class="card-impact-highlight">
             <div class="card-impact-header">
-              <i class="fa-solid fa-lightbulb"></i>
-              <span>Why It Matters for AX</span>
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>【사설 논평】 Why It Matters for AX</span>
             </div>
             <p class="card-impact-text">${item.whyMatters}</p>
           </div>
@@ -458,7 +458,7 @@ function renderNewsGrid() {
           <div class="impact-score-widget" title="비즈니스 AX 전환 영향도 지수">
             <div class="impact-circle">${item.impactScore}</div>
             <div class="impact-score-info">
-              <span class="impact-score-label">AX Impact</span>
+              <span class="impact-score-label">★ AX Impact</span>
               <span class="impact-score-tier">${item.impactTier}</span>
             </div>
           </div>
@@ -466,11 +466,11 @@ function renderNewsGrid() {
           <div class="card-action-btns">
             <button class="icon-btn bookmark-toggle-btn ${isBookmarked ? 'active' : ''}" 
                     data-id="${item.id}" 
-                    title="${isBookmarked ? '북마크 취소' : '북마크 저장'}">
+                    title="${isBookmarked ? '기사 스크랩 취소' : '기사 스크랩(북마크)'}">
               <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
             </button>
             <button class="btn btn-outline btn-sm open-detail-btn" data-id="${item.id}">
-              <span>심층 분석</span>
+              <span>기사 전문 읽기</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -615,8 +615,8 @@ function generateBriefingReport() {
   // Compile top highlights
   const topNews = [...NEWS_DATA].sort((a, b) => b.impactScore - a.impactScore).slice(0, 4);
 
-  let report = `# 📋 [AX Daily Executive Briefing] ${today}\n`;
-  report += `작성: AI · AX Pulse 자동 인텔리전스 시스템\n\n`;
+  let report = `# 📰 [The AI · AX Chronicle - 조간 경영진 브리핑] ${today}\n`;
+  report += `발행: The AI · AX Chronicle 편집국 인텔리전스 데스크\n\n`;
   report += `------------------------------------------------------------\n`;
   report += `■ EXECUTIVE SUMMARY (경영진 핵심 요약)\n`;
   report += `오늘의 글로벌 AI 전환(AX)의 가장 핵심 화두는 '단순 텍스트 생성'에서 '사내 데이터 격리 기반 자율 에이전트(Agentic Orchestration)'로의 전환입니다.\n`;
