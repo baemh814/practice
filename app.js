@@ -441,8 +441,8 @@ function renderNewsGrid() {
           <!-- Editorial Column / Why It Matters -->
           <div class="card-impact-highlight">
             <div class="card-impact-header">
-              <i class="fa-solid fa-pen-nib"></i>
-              <span>【사설 논평】 Why It Matters for AX</span>
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>AX 인사이트 분석</span>
             </div>
             <p class="card-impact-text">${item.whyMatters}</p>
           </div>
@@ -458,7 +458,7 @@ function renderNewsGrid() {
           <div class="impact-score-widget" title="비즈니스 AX 전환 영향도 지수">
             <div class="impact-circle">${item.impactScore}</div>
             <div class="impact-score-info">
-              <span class="impact-score-label">★ AX Impact</span>
+              <span class="impact-score-label">AX SCORE</span>
               <span class="impact-score-tier">${item.impactTier}</span>
             </div>
           </div>

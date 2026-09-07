@@ -6,16 +6,17 @@
   <title>THE AI · AX CHRONICLE | 글로벌 AI 전환 조간 뉴스 저널</title>
   <meta name="description" content="글로벌 AI 혁신과 엔터프라이즈 AI 전환(AX)의 핵심 이슈를 심층 큐레이팅하는 신문 스타일의 데일리 인텔리전스 저널">
   
-  <!-- Google Fonts: Playfair Display, Newsreader, Lora, Special Elite, JetBrains Mono -->
+  <!-- Modern Web Typography: Pretendard (Korean Standard), Outfit & Plus Jakarta Sans (Editorial Display), JetBrains Mono -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Special+Elite&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Main Stylesheet (Cache-busted) -->
-  <link rel="stylesheet" href="styles.css?v=newspaper_real_paper_v3">
+  <link rel="stylesheet" href="styles.css?v=modern_neo_editorial_v1">
 </head>
 <body class="newspaper-body">
 
@@ -25,18 +26,17 @@
     <!-- Newspaper Top Dateline Bar -->
     <div class="newspaper-dateline-bar">
       <div class="dateline-left">
+        <span class="live-pill"><span class="pulse-dot"></span> LIVE DISPATCH</span>
         <span class="dateline-item"><strong>VOL. IX</strong> · NO. 248</span>
         <span class="divider-dot">•</span>
         <span class="dateline-item">SEOUL · SILICON VALLEY · BRUSSELS · LONDON</span>
-        <span class="divider-dot">•</span>
-        <span class="badge-edition">조간 특별판 (Morning Broadsheet)</span>
       </div>
       <div class="dateline-right">
         <span id="currentDateDisplay" class="dateline-item"><i class="fa-regular fa-calendar-days"></i> 2026년 9월 7일 월요일</span>
         <span class="divider-dot">•</span>
         <span class="dateline-item"><i class="fa-solid fa-cloud-sun"></i> 22°C 맑음</span>
         <span class="divider-dot">•</span>
-        <span class="dateline-item">정가: 1,500원 / $2.00</span>
+        <span class="edition-tag"><i class="fa-solid fa-sparkles"></i> AI 전환 조간 판</span>
       </div>
     </div>
 
@@ -45,38 +45,44 @@
       <div class="masthead-container">
         <div class="masthead-meta-left">
           <div class="masthead-metric-box">
-            <span class="meta-label">오늘의 핵심 특종</span>
-            <span class="meta-value" id="totalNewsCount">8</span>
-            <span class="meta-sub">건 큐레이션 완료</span>
+            <span class="meta-label"><i class="fa-solid fa-layer-group"></i> 오늘의 특종 큐레이션</span>
+            <div class="meta-value-row">
+              <span class="meta-value" id="totalNewsCount">8</span>
+              <span class="meta-unit">SELECTIONS</span>
+            </div>
+            <span class="meta-sub">글로벌 핵심 이슈 엄선 완료</span>
           </div>
         </div>
 
         <div class="masthead-center">
           <div class="masthead-crest">
-            <i class="fa-solid fa-feather-pointed"></i>
-            <span>EST. 2024 · THE DAILY INTELLIGENCE JOURNAL</span>
-            <i class="fa-solid fa-feather-pointed"></i>
+            <span class="masthead-crest-badge"><i class="fa-solid fa-bolt-lightning"></i> AI INTELLIGENCE RADAR</span>
+            <span class="masthead-crest-sub">EST. 2024 · ENTERPRISE AI & AX JOURNAL</span>
           </div>
           <h1 class="newspaper-title">The AI · AX Chronicle</h1>
           <p class="newspaper-subtitle">
-            <em>Veritas et Intelligentia</em> — 글로벌 인공지능 혁신과 엔터프라이즈 AI 전환(AX) 심층 기록
+            <span class="sub-badge">INSIGHT & DEPTH</span> 글로벌 AI 혁신과 엔터프라이즈 AI 전환(AX)의 최전선을 기록합니다
           </p>
         </div>
 
         <div class="masthead-meta-right">
           <div class="masthead-metric-box right">
-            <span class="meta-label">평균 AX 임팩트 지수</span>
-            <span class="meta-value highlight"><i class="fa-solid fa-star"></i> <span id="avgImpactScore">9.2</span><small>/10</small></span>
-            <span class="meta-sub">전사적 비즈니스 영향도</span>
+            <span class="meta-label"><i class="fa-solid fa-chart-line"></i> 평균 AX 임팩트 지수</span>
+            <div class="meta-value-row right">
+              <span class="meta-value highlight" id="avgImpactScore">9.2</span>
+              <span class="meta-unit"><i class="fa-solid fa-star"></i> / 10</span>
+            </div>
+            <span class="meta-sub">비즈니스 프로세스 혁신도</span>
           </div>
           <button id="briefingBtn" class="btn btn-newspaper" title="경영진/팀 공유용 일일 브리핑 생성">
             <i class="fa-solid fa-newspaper"></i>
             <span>경영진 조간 브리핑</span>
+            <i class="fa-solid fa-arrow-right btn-arrow"></i>
           </button>
         </div>
       </div>
 
-      <!-- Newspaper Decorative Double Rules -->
+      <!-- Newspaper Decorative Rules -->
       <div class="masthead-rules">
         <div class="rule-double"></div>
       </div>
@@ -85,7 +91,7 @@
     <!-- Realtime Marquee Ticker (호외 전신 / FLASH NEWSWIRE) -->
     <aside class="ticker-wrapper" aria-label="실시간 AI 속보">
       <div class="ticker-badge">
-        <span class="breaking-seal">호외 / FLASH</span>
+        <span class="breaking-seal"><span class="pulse-dot-red"></span> 호외 FLASH</span>
         <span class="ticker-label">NEWSWIRE</span>
       </div>
       <div class="ticker-content" id="tickerContent">
@@ -99,13 +105,13 @@
         <div class="lead-banner">
           <div class="lead-header-row">
             <span class="lead-tag"><i class="fa-solid fa-thumbtack"></i> 오늘 1면 프론트페이지 사설 기획</span>
-            <span class="lead-date-stamp">특집 제482호</span>
+            <span class="lead-date-stamp"><i class="fa-solid fa-bolt"></i> SPECIAL REPORT #482</span>
           </div>
           <h2 class="lead-headline">
             "단순 챗봇의 시대를 지나 <span class="ink-accent">자율 에이전트와 온프레미스 AX</span>의 격돌로"
           </h2>
           <p class="lead-summary">
-            <span class="drop-cap">2</span>026년 기업 AI 투자의 성패는 PoC 단계를 벗어나 사내 ERP, CRM 등 레거시 시스템과 에이전트를 결합하는 
+            2026년 기업 AI 투자의 성패는 단순한 PoC 단계를 벗어나 사내 ERP, CRM 등 레거시 시스템과 에이전트를 결합하는 
             <strong>'실행 가능한 에이전틱 인프라(Agentic Architecture)'</strong>와 
             <strong>'데이터 주권 확보를 위한 자체 sLLM 파이프라인'</strong>에 의해 결정되고 있습니다. 글로벌 선도 기업들은 클라우드 종속성을 낮추고 독자적인 지능망을 갖추는 방향으로 급선회하고 있습니다.
           </p>
@@ -113,7 +119,7 @@
 
         <!-- Trending Keywords -->
         <div class="trending-tags">
-          <span class="trending-label"><i class="fa-solid fa-magnifying-glass"></i> 조간 주요 쟁점 색인:</span>
+          <span class="trending-label"><i class="fa-solid fa-fire-flame-curved"></i> 실시간 주요 쟁점 색인</span>
           <div class="tag-pills" id="trendingTags">
             <!-- Injected by JavaScript -->
           </div>
@@ -135,6 +141,7 @@
           <div class="search-box">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
             <input type="text" id="searchInput" placeholder="기사 검색 (예: Gemini, 에이전트, 온프레미스, Blackwell...)" autocomplete="off">
+            <span class="search-kbd-hint">SEARCH</span>
             <button id="clearSearchBtn" class="clear-btn" aria-label="검색어 지우기" style="display: none;">
               <i class="fa-solid fa-xmark"></i>
             </button>
@@ -185,12 +192,12 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
-          <i class="fa-solid fa-feather-pointed"></i>
+          <i class="fa-solid fa-bolt-lightning"></i>
           <span>The AI · AX Chronicle Publishing Co.</span>
         </div>
         <p class="footer-copy">© 2026 The AI · AX Chronicle. 등록번호: 서울 아-0482호 | 발행인: AI Intelligence Desk | 무단 전재 및 재배포 금지</p>
         <div class="footer-links">
-          <span><i class="fa-solid fa-print"></i> 일간 전신 자동 동기화 가동 중</span>
+          <span><span class="live-status-dot"></span> 글로벌 AI 실시간 동기화 가동 중</span>
         </div>
       </div>
     </footer>
@@ -218,8 +225,8 @@
         <!-- Why It Matters Callout -->
         <div class="callout-box">
           <div class="callout-header">
-            <i class="fa-solid fa-pen-nib"></i>
-            <span>【편집국 사설 논평】 Why it Matters for Enterprise AX</span>
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>【편집국 사설 인사이트】 Why it Matters for Enterprise AX</span>
           </div>
           <p class="callout-text" id="modalWhyMatters"></p>
         </div>
@@ -232,7 +239,7 @@
 
         <!-- Strategic Action Plan -->
         <div class="modal-section">
-          <h4 class="section-title"><i class="fa-solid fa-compass"></i> 기업 도입 시 권장 액션 플랜</h4>
+          <h4 class="section-title"><i class="fa-solid fa-compass"></i> 기업 도입 권장 액션 플랜</h4>
           <div class="action-box" id="modalActionPlan"></div>
         </div>
 
@@ -261,7 +268,7 @@
     <div class="modal-card briefing-card">
       <div class="modal-header">
         <div class="modal-meta-top">
-          <span class="modal-category highlight"><i class="fa-solid fa-stamp"></i> 일일 특종 발행</span>
+          <span class="modal-category highlight"><i class="fa-solid fa-sparkles"></i> 일일 특종 발행</span>
           <span class="modal-date" id="briefingDate">2026.09.07</span>
         </div>
         <button class="modal-close-btn" id="closeBriefingModalBtn" aria-label="브리핑 닫기">
@@ -271,8 +278,8 @@
 
       <div class="modal-body">
         <div class="briefing-hero">
-          <h2 class="briefing-title">📰 The AI · AX Chronicle — 경영진 조간 브리핑</h2>
-          <p class="briefing-desc">금일 조간신문 1면 및 핵심 섹션 특종을 토대로 경영진 보고 및 사내 공유용 리포트를 편집했습니다.</p>
+          <h2 class="briefing-title">The AI · AX Chronicle — 경영진 조간 브리핑</h2>
+          <p class="briefing-desc">금일 조간 1면 및 핵심 섹션 특종을 토대로 경영진 보고 및 사내 공유용 리포트를 편집했습니다.</p>
         </div>
 
         <div class="briefing-preview-box">
@@ -296,6 +303,6 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <!-- Application Logic (Cache-busted) -->
-  <script src="app.js?v=newspaper_real_paper_v3"></script>
+  <script src="app.js?v=modern_neo_editorial_v1"></script>
 </body>
 </html>
