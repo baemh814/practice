@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE AI · AX CHRONICLE | 글로벌 AI 전환 조간 뉴스 저널</title>
-  <meta name="description" content="글로벌 AI 혁신과 엔터프라이즈 AI 전환(AX)의 핵심 이슈를 심층 큐레이팅하는 신문 스타일의 데일리 인텔리전스 저널">
+  <title>AX 트렌드 리포트 | 엔터프라이즈 AI 전환 인텔리전스 큐레이션</title>
+  <meta name="description" content="글로벌 AI 혁신과 엔터프라이즈 AI 전환(AX)의 핵심 이슈를 심층 큐레이팅하는 데일리 인텔리전스 저널">
   
   <!-- Modern Web Typography: Pretendard (Korean Standard), Outfit & Plus Jakarta Sans (Editorial Display), JetBrains Mono -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.all.min.css">
@@ -16,27 +16,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Main Stylesheet (Cache-busted) -->
-  <link rel="stylesheet" href="styles.css?v=modern_neo_editorial_v1">
+  <link rel="stylesheet" href="styles.css?v=weekly_final_v4">
 </head>
 <body class="newspaper-body">
 
   <!-- Main Broadsheet Paper Sheet -->
   <div class="broadsheet-paper">
 
-    <!-- Newspaper Top Dateline Bar -->
+    <!-- Newspaper Top Dateline Bar (Weekly Edition) -->
     <div class="newspaper-dateline-bar">
       <div class="dateline-left">
-        <span class="live-pill"><span class="pulse-dot"></span> LIVE DISPATCH</span>
-        <span class="dateline-item"><strong>VOL. IX</strong> · NO. 248</span>
+        <span class="live-pill"><i class="fa-solid fa-calendar-check"></i> WEEKLY ISSUE #36</span>
+        <span class="dateline-item"><strong>2026년 9월 2주차 위클리 에디션</strong></span>
         <span class="divider-dot">•</span>
-        <span class="dateline-item">SEOUL · SILICON VALLEY · BRUSSELS · LONDON</span>
+        <span class="dateline-item">발행 주기: 매주 월요일 발행</span>
       </div>
       <div class="dateline-right">
-        <span id="currentDateDisplay" class="dateline-item"><i class="fa-regular fa-calendar-days"></i> 2026년 9월 7일 월요일</span>
+        <span id="currentDateDisplay" class="dateline-item"><i class="fa-regular fa-calendar-days"></i> 2026.09.08 ~ 09.14</span>
         <span class="divider-dot">•</span>
-        <span class="dateline-item"><i class="fa-solid fa-cloud-sun"></i> 22°C 맑음</span>
-        <span class="divider-dot">•</span>
-        <span class="edition-tag"><i class="fa-solid fa-sparkles"></i> AI 전환 조간 판</span>
+        <span class="edition-tag trust-tag"><i class="fa-solid fa-shield-halved"></i> 1주간 엄선: 글로벌 전략 컨설팅 & 정론 경제지</span>
       </div>
     </div>
 
@@ -45,38 +43,30 @@
       <div class="masthead-container">
         <div class="masthead-meta-left">
           <div class="masthead-metric-box">
-            <span class="meta-label"><i class="fa-solid fa-layer-group"></i> 오늘의 특종 큐레이션</span>
+            <span class="meta-label"><i class="fa-solid fa-layer-group"></i> 이번 주 엄선 리포트</span>
             <div class="meta-value-row">
-              <span class="meta-value" id="totalNewsCount">8</span>
-              <span class="meta-unit">SELECTIONS</span>
+              <span class="meta-value" id="totalNewsCount">13</span>
+              <span class="meta-unit">REPORTS</span>
             </div>
-            <span class="meta-sub">글로벌 핵심 이슈 엄선 완료</span>
+            <span class="meta-sub">글로벌 톱 컨설팅 & 정론 경제지</span>
           </div>
         </div>
 
         <div class="masthead-center">
           <div class="masthead-crest">
-            <span class="masthead-crest-badge"><i class="fa-solid fa-bolt-lightning"></i> AI INTELLIGENCE RADAR</span>
-            <span class="masthead-crest-sub">EST. 2024 · ENTERPRISE AI & AX JOURNAL</span>
+            <span class="masthead-crest-badge"><i class="fa-solid fa-bolt-lightning"></i> AX TREND REPORT</span>
+            <span class="masthead-crest-sub">WEEKLY AI & AX INTELLIGENCE NEWSLETTER</span>
           </div>
-          <h1 class="newspaper-title">The AI · AX Chronicle</h1>
+          <h1 class="newspaper-title">AX 트렌드 리포트</h1>
           <p class="newspaper-subtitle">
-            <span class="sub-badge">INSIGHT & DEPTH</span> 글로벌 AI 혁신과 엔터프라이즈 AI 전환(AX)의 최전선을 기록합니다
+            <span class="sub-badge">WEEKLY CURATION</span> 1주간 가장 임팩트 있는 글로벌 AI 전환(AX) 전략 및 실무 분석 큐레이팅
           </p>
         </div>
 
-        <div class="masthead-meta-right">
-          <div class="masthead-metric-box right">
-            <span class="meta-label"><i class="fa-solid fa-chart-line"></i> 평균 AX 임팩트 지수</span>
-            <div class="meta-value-row right">
-              <span class="meta-value highlight" id="avgImpactScore">9.2</span>
-              <span class="meta-unit"><i class="fa-solid fa-star"></i> / 10</span>
-            </div>
-            <span class="meta-sub">비즈니스 프로세스 혁신도</span>
-          </div>
-          <button id="briefingBtn" class="btn btn-newspaper" title="경영진/팀 공유용 일일 브리핑 생성">
+        <div class="masthead-meta-right single-action">
+          <button id="briefingBtn" class="btn btn-newspaper" title="경영진/팀 공유용 이번 주 위클리 종합 브리핑">
             <i class="fa-solid fa-newspaper"></i>
-            <span>경영진 조간 브리핑</span>
+            <span>이번 주 위클리 종합 브리핑</span>
             <i class="fa-solid fa-arrow-right btn-arrow"></i>
           </button>
         </div>
@@ -88,38 +78,38 @@
       </div>
     </header>
 
-    <!-- Realtime Marquee Ticker (호외 전신 / FLASH NEWSWIRE) -->
-    <aside class="ticker-wrapper" aria-label="실시간 AI 속보">
+    <!-- Realtime Marquee Ticker (이번 주 핵심 키노트 / WEEKLY KEYNOTES) -->
+    <aside class="ticker-wrapper" aria-label="이번 주 핵심 키노트 브리핑">
       <div class="ticker-badge">
-        <span class="breaking-seal"><span class="pulse-dot-red"></span> 호외 FLASH</span>
-        <span class="ticker-label">NEWSWIRE</span>
+        <span class="breaking-seal"><i class="fa-solid fa-bookmark"></i> WEEKLY</span>
+        <span class="ticker-label">HIGHLIGHTS</span>
       </div>
       <div class="ticker-content" id="tickerContent">
         <!-- Injected by JavaScript -->
       </div>
     </aside>
 
-    <!-- Front Page Editorial Headline Section (조간 1면 톱기사) -->
+    <!-- Front Page Editorial Headline Section (이번 주 위클리 커버 스토리) -->
     <section class="frontpage-lead-section">
       <div class="lead-wrapper">
         <div class="lead-banner">
           <div class="lead-header-row">
-            <span class="lead-tag"><i class="fa-solid fa-thumbtack"></i> 오늘 1면 프론트페이지 사설 기획</span>
-            <span class="lead-date-stamp"><i class="fa-solid fa-bolt"></i> SPECIAL REPORT #482</span>
+            <span class="lead-tag"><i class="fa-solid fa-star"></i> 이번 주 위클리 커버 스토리 (Weekly Cover)</span>
+            <span class="lead-date-stamp"><i class="fa-solid fa-calendar-week"></i> 2026년 9월 2주차 기획</span>
           </div>
           <h2 class="lead-headline">
             "단순 챗봇의 시대를 지나 <span class="ink-accent">자율 에이전트와 온프레미스 AX</span>의 격돌로"
           </h2>
           <p class="lead-summary">
-            2026년 기업 AI 투자의 성패는 단순한 PoC 단계를 벗어나 사내 ERP, CRM 등 레거시 시스템과 에이전트를 결합하는 
-            <strong>'실행 가능한 에이전틱 인프라(Agentic Architecture)'</strong>와 
-            <strong>'데이터 주권 확보를 위한 자체 sLLM 파이프라인'</strong>에 의해 결정되고 있습니다. 글로벌 선도 기업들은 클라우드 종속성을 낮추고 독자적인 지능망을 갖추는 방향으로 급선회하고 있습니다.
+            <strong>맥킨지·BCG·베인</strong> 글로벌 컨설팅 3사와 <strong>한국경제·매일경제·Financial Times</strong>가 공통 분석한 2026 기업 AI 투자의 핵심 분기점:
+            단순 PoC 단계를 지나 사내 ERP, CRM과 연결되는 <strong>'에이전틱 워크플로우 아키텍처'</strong>와 
+            망분리 규제 및 데이터 주권을 지키는 <strong>'온프레미스 sLLM 파이프라인'</strong>을 조기 선점한 기업이 시장 가치와 생산성 혁신을 독점하고 있습니다.
           </p>
         </div>
 
         <!-- Trending Keywords -->
         <div class="trending-tags">
-          <span class="trending-label"><i class="fa-solid fa-fire-flame-curved"></i> 실시간 주요 쟁점 색인</span>
+          <span class="trending-label"><i class="fa-solid fa-fire-flame-curved"></i> 공신력 기관 주요 분석 키워드</span>
           <div class="tag-pills" id="trendingTags">
             <!-- Injected by JavaScript -->
           </div>
@@ -129,8 +119,33 @@
 
     <!-- Main Content Area -->
     <main class="main-container">
-      <!-- Controls Bar (지면 섹션 분류 & 검색) -->
+      <!-- Controls Bar (지면 섹션 분류 & 출처 분류 & 검색) -->
       <div class="controls-panel">
+        <!-- Source Authority Filter Bar (공신력 출처 전용 필터) -->
+        <div class="source-filter-toolbar" aria-label="공신력 출처 기관 필터">
+          <div class="source-filter-label">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>공신력 출처 선택:</span>
+          </div>
+          <div class="source-pills" id="sourceFilterPills">
+            <button class="source-pill-btn active" data-source-type="all">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>전체 공신력 출처</span>
+              <span class="source-count-badge" id="sourceCountAll">10</span>
+            </button>
+            <button class="source-pill-btn" data-source-type="consulting">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>글로벌 컨설팅 펌 (MBB · Big4)</span>
+              <span class="source-count-badge" id="sourceCountConsulting">6</span>
+            </button>
+            <button class="source-pill-btn" data-source-type="media">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>정론 경제·글로벌 유력지 (한경·매경·FT)</span>
+              <span class="source-count-badge" id="sourceCountMedia">4</span>
+            </button>
+          </div>
+        </div>
+
         <!-- Category Tabs (신문 면별 분류) -->
         <nav class="category-tabs" id="categoryTabs" aria-label="뉴스 카테고리">
           <!-- Injected by JavaScript -->
@@ -140,7 +155,7 @@
         <div class="filter-toolbar">
           <div class="search-box">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" id="searchInput" placeholder="기사 검색 (예: Gemini, 에이전트, 온프레미스, Blackwell...)" autocomplete="off">
+            <input type="text" id="searchInput" placeholder="위클리 리포트 검색 (예: GPT-6 아스트라, 에이전트, 온프레미스, 맥킨지...)" autocomplete="off">
             <span class="search-kbd-hint">SEARCH</span>
             <button id="clearSearchBtn" class="clear-btn" aria-label="검색어 지우기" style="display: none;">
               <i class="fa-solid fa-xmark"></i>
@@ -151,15 +166,14 @@
             <div class="sort-wrapper">
               <label for="sortSelect" class="sort-label"><i class="fa-solid fa-arrow-down-wide-short"></i> 정렬:</label>
               <select id="sortSelect" class="custom-select">
-                <option value="latest">최신 조간순</option>
-                <option value="impact">AX 임팩트 높은순</option>
+                <option value="latest">최신 등록순</option>
                 <option value="views">인기 조회순</option>
               </select>
             </div>
 
             <button id="bookmarkFilterBtn" class="btn btn-outline" data-active="false">
               <i class="fa-regular fa-bookmark"></i>
-              <span>스크랩 기사 모아보기</span>
+              <span>스크랩 리포트 모아보기</span>
               <span class="badge" id="bookmarkBadge">0</span>
             </button>
           </div>
@@ -193,9 +207,9 @@
       <div class="footer-container">
         <div class="footer-brand">
           <i class="fa-solid fa-bolt-lightning"></i>
-          <span>The AI · AX Chronicle Publishing Co.</span>
+          <span>AX 트렌드 리포트 (AX Trend Report)</span>
         </div>
-        <p class="footer-copy">© 2026 The AI · AX Chronicle. 등록번호: 서울 아-0482호 | 발행인: AI Intelligence Desk | 무단 전재 및 재배포 금지</p>
+        <p class="footer-copy">© 2026 AX 트렌드 리포트 (AX Trend Report). 글로벌 인텔리전스 데스크 | 엔터프라이즈 AI 전환 실무 큐레이션</p>
         <div class="footer-links">
           <span><span class="live-status-dot"></span> 글로벌 AI 실시간 동기화 가동 중</span>
         </div>
@@ -211,11 +225,13 @@
         <div class="modal-meta-top">
           <span class="modal-category" id="modalCategory">카테고리</span>
           <span class="modal-date" id="modalDate">시간</span>
-          <span class="modal-impact-badge" id="modalImpact">AX Impact 9.8</span>
+          <span class="modal-domain-badge" id="modalDomainBadge"><i class="fa-solid fa-compass"></i> 핵심 영역</span>
         </div>
-        <button class="modal-close-btn" id="closeDetailModalBtn" aria-label="모달 닫기">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+        <div class="modal-header-actions">
+          <button class="modal-close-btn" id="closeDetailModalBtn" aria-label="모달 닫기">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
       </div>
 
       <div class="modal-body">
@@ -251,25 +267,33 @@
       </div>
 
       <div class="modal-footer">
-        <button id="modalBookmarkToggleBtn" class="btn btn-outline">
-          <i class="fa-regular fa-bookmark"></i>
-          <span>기사 스크랩 저장</span>
-        </button>
-        <button id="modalCopySummaryBtn" class="btn btn-newspaper">
-          <i class="fa-regular fa-copy"></i>
-          <span>핵심 브리핑 복사</span>
-        </button>
+        <div class="modal-footer-left">
+          <button id="modalBookmarkToggleBtn" class="btn btn-outline">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>리포트 스크랩 저장</span>
+          </button>
+          <button id="modalCopySummaryBtn" class="btn btn-outline">
+            <i class="fa-regular fa-copy"></i>
+            <span>핵심 브리핑 복사</span>
+          </button>
+        </div>
+        <div class="modal-footer-right">
+          <a id="modalExtLinkBottom" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-newspaper modal-ext-link-main">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>원문 기사 바로가기</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Executive Daily Briefing Modal (경영진 조간 브리핑) -->
+  <!-- Weekly Comprehensive Briefing Modal (위클리 종합 브리핑) -->
   <div class="modal-backdrop" id="briefingModal" aria-hidden="true">
     <div class="modal-card briefing-card">
       <div class="modal-header">
         <div class="modal-meta-top">
-          <span class="modal-category highlight"><i class="fa-solid fa-sparkles"></i> 일일 특종 발행</span>
-          <span class="modal-date" id="briefingDate">2026.09.07</span>
+          <span class="modal-category highlight"><i class="fa-solid fa-sparkles"></i> 주간 특별 발행</span>
+          <span class="modal-date" id="briefingDate">2026.09.08 ~ 09.14</span>
         </div>
         <button class="modal-close-btn" id="closeBriefingModalBtn" aria-label="브리핑 닫기">
           <i class="fa-solid fa-xmark"></i>
@@ -278,8 +302,8 @@
 
       <div class="modal-body">
         <div class="briefing-hero">
-          <h2 class="briefing-title">The AI · AX Chronicle — 경영진 조간 브리핑</h2>
-          <p class="briefing-desc">금일 조간 1면 및 핵심 섹션 특종을 토대로 경영진 보고 및 사내 공유용 리포트를 편집했습니다.</p>
+          <h2 class="briefing-title">AX 트렌드 리포트 — 이번 주 위클리 종합 브리핑</h2>
+          <p class="briefing-desc">이번 주 글로벌 컨설팅 펌과 정론 경제지의 핵심 심층 분석을 토대로 경영진 보고 및 사내 공유용 위클리 인텔리전스를 종합했습니다.</p>
         </div>
 
         <div class="briefing-preview-box">
@@ -288,11 +312,11 @@
       </div>
 
       <div class="modal-footer">
-        <span class="briefing-hint"><i class="fa-solid fa-circle-info"></i> 마크다운 형식으로 사내 슬랙, 노션, 메일 등에 바로 인쇄/붙여넣을 수 있습니다.</span>
+        <span class="briefing-hint"><i class="fa-solid fa-circle-info"></i> 마크다운 텍스트 형식으로 사내 슬랙, 노션, 경영진 보고 메일에 즉시 붙여넣을 수 있습니다.</span>
         <div class="footer-btn-group">
           <button id="copyBriefingBtn" class="btn btn-newspaper">
             <i class="fa-regular fa-copy"></i>
-            <span>리포트 전체 복사</span>
+            <span>브리핑 전문 전체 복사</span>
           </button>
         </div>
       </div>
@@ -303,6 +327,6 @@
   <div class="toast-container" id="toastContainer"></div>
 
   <!-- Application Logic (Cache-busted) -->
-  <script src="app.js?v=modern_neo_editorial_v1"></script>
+  <script src="app.js?v=weekly_briefing_fixed_v5"></script>
 </body>
 </html>

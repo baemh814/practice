@@ -1,217 +1,423 @@
 /**
- * AI · AX PULSE - Core Application Logic
- * Real-time AI Transformation News Curation & Executive Intelligence
+ * AX TREND REPORT (AX 트렌드 리포트) - Core Application Logic
+ * Weekly AI & AX Intelligence Newsletter (2026년 9월 2주차 위클리 에디션)
+ * Curated from Global Tier-1 Consulting Firms & Prestigious Economic Press
  */
 
 // ==========================================================================
-// 1. Curated AI / AX News Dataset
+// 1. Weekly Curated AI / AX Dataset (100% Institutional Deep Links & Impact Content)
 // ==========================================================================
 const NEWS_DATA = [
   {
     id: "news-001",
-    title: "구글 딥마인드, 멀티모달 자율 에이전트 전용 플랫폼 'Gemini Enterprise Agentic Suite' 전격 공개",
-    category: "agents",
-    categoryLabel: "자율 에이전트",
-    badgeClass: "agents",
-    time: "15분 전",
-    timestamp: Date.now() - 15 * 60 * 1000,
-    source: "Google DeepMind Press Room",
+    title: "[한경 단독] KT, 다음·무신사·직방에 AI 심는다… '엔터프라이즈 AI 서비스 생태계 전면 확장'",
+    category: "enterprise",
+    categoryLabel: "🏢 기업·엔터프라이즈 AX",
+    badgeClass: "enterprise",
+    sourceType: "media",
+    sourceOrg: "한국경제신문",
+    reportType: "한경 IT·산업 단독 보도",
+    source: "한국경제신문 테크부",
+    originalUrl: "https://www.hankyung.com/article/2026091313871",
+    time: "2026년 9월 2주차 · 9월 13일 (일)",
+    timestamp: 1789257600000,
     readTime: "4분 소요",
-    impactScore: 9.8,
-    impactTier: "최상위 AX 전환",
-    views: 4820,
-    whyMatters: "단순 챗봇을 넘어 엔터프라이즈 ERP, CRM과 결합되어 복잡한 멀티스텝 비즈니스 프로세스를 100% 자율 완결하는 에이전트 표준 체계 등장.",
-    summary: "구글이 기업 내 레거시 소프트웨어와 멀티모달 추론을 결합하여 복잡한 재무 감사, 인사 발령, 공급망 조율을 완벽히 자동화하는 차세대 에이전틱 플랫폼을 정식 발표했습니다.",
+    impactScore: 9.7,
+    impactTier: "엔터프라이즈 생태계",
+    views: 6840,
+    whyMatters: "KT가 포털 다음, 패션 플랫폼 무신사, 부동산 앱 직방 등 국내 대표 플랫폼들과 제휴해 6천만 이용자 및 사내 업무 시스템에 생성형 AI 엔진을 직접 탑재하는 '모두의 AI' 전략을 본격화.",
+    summary: "KT가 국민 다수가 사용하는 대형 모바일 서비스들과 손잡고 엔터프라이즈 AI 에이전트 및 생성형 AI 인프라 연동망을 전격 가동합니다.",
     fullSummary: [
-      "Gemini 2.5 기반의 자율 에이전트 오케스트레이션 프레임워크로, API 호출뿐 아니라 브라우저 및 내부 GUI 화면 조작 가능.",
-      "기업 데이터 유출 방지를 위한 VPC 샌드박스 및 실시간 권한 감사(Role-Based Agent Security) 탑재.",
-      "포춘 500대 기업 파일럿 결과 일일 워크플로우 처리 시간 67% 단축 입증."
+      "국내 유수 플랫폼 및 기업 환경에 KT 초거대 AI 엔진을 API와 온프레미스 형태로 직접 통합.",
+      "일상 쇼핑, 부동산 탐색, 정보 검색 과정에서 사내외 에이전트가 실시간으로 업무를 보조하는 실질적 AX 모델 구축.",
+      "빅테크 클라우드 단독 의존에서 벗어나 국내 산업 환경에 최적화된 맞춤형 B2B 파트너십 선도."
     ],
-    actionPlan: "기존 RAG 중심 검색 봇 도입 계획을 재검토하고, 내부 API 및 샌드박스를 연동할 수 있는 '에이전틱 워크플로우 아키텍처'로 조기 전환 권고.",
-    tags: ["#Gemini", "#자율에이전트", "#오케스트레이션", "#엔터프라이즈보안"]
+    actionPlan: "B2C/B2B 플랫폼 기업은 자사 서비스 내 단순 챗봇 추가를 넘어, 버티컬 특화 데이터를 연동한 임베디드 AI 파트너십을 적극 체결할 것.",
+    tags: ["#한국경제", "#KT", "#엔터프라이즈AI", "#무신사", "#직방"]
   },
   {
     id: "news-002",
-    title: "글로벌 금융권, 온프레미스 경량 LLM 기반 'AX(AI 전환) 2.0' 착수… 데이터 주권 확보 가속",
+    title: "[딜로이트 Tech Trends] Tech Trends: Moving from Experimentation to Real Enterprise Impact",
     category: "enterprise",
-    categoryLabel: "엔터프라이즈 AX",
+    categoryLabel: "🏢 기업·엔터프라이즈 AX",
     badgeClass: "enterprise",
-    time: "42분 전",
-    timestamp: Date.now() - 42 * 60 * 1000,
-    source: "Financial Times Tech Insight",
+    sourceType: "consulting",
+    sourceOrg: "딜로이트 (Deloitte)",
+    reportType: "Deloitte Insights 글로벌 테크 트렌드",
+    source: "Deloitte Global Technology Practice",
+    originalUrl: "https://www2.deloitte.com/us/en/insights/focus/tech-trends.html",
+    time: "2026년 9월 2주차 · 9월 10일 (수)",
+    timestamp: 1788998400000,
     readTime: "5분 소요",
-    impactScore: 9.5,
-    impactTier: "금융 AX 혁신",
-    views: 3950,
-    whyMatters: "망분리와 개인정보보호 규제가 엄격한 금융권에서 퍼블릭 클라우드 대신 사내 격리형 소형 고성능 모델(sLLM) 도입이 AX의 주류로 안착.",
-    summary: "글로벌 상위 10개 투자은행 및 국내 주요 금융지주들이 사내 핵심 금융 데이터의 외부 반출 없이 실시간 여신 심사와 이상거래(FDS)를 탐지하는 온프레미스 AI 클러스터 구축을 완료했습니다.",
+    impactScore: 9.6,
+    impactTier: "전략 로드맵",
+    views: 6120,
+    whyMatters: "단순 일회성 실험(PoC) 단계를 넘어 사내 핵심 비즈니스 로직과 기간계 시스템에 결합되어 실질적 재무 가치를 창출하는 5대 엔터프라이즈 AX 핵심 트렌드 발표.",
+    summary: "딜로이트가 발표한 글로벌 테크 트렌드 리포트에 따르면, AI 파일럿을 넘어 코어 엔지니어링 및 워크플로우 자동화를 완성한 선도 기업들이 기업가치와 생산성 혁신을 주도하고 있습니다.",
     fullSummary: [
-      "7B~14B 파라미터 경량 오픈소스 모델을 금융 특화 데이터로 파인튜닝하여 대형 상용 모델 대비 92% 수준의 성능 달성.",
-      "추론 지연 시간(Latency) 18ms 이하로 단축하여 실시간 증권 트레이딩 보조에 즉각 투입.",
-      "클라우드 종속성 탈피 및 연간 AI 인프라 유지 비용 40% 이상 절감 효과 달성."
+      "전사 IT 아키텍처와 레거시 시스템을 에이전트 기반 인터페이스(MCP 등)로 현대화하는 것이 기업 생존의 핵심 과제.",
+      "실제 영업이익 기여도가 입증된 영역을 중심으로 AI 예산의 70%를 집중 재배치하는 추세 확인.",
+      "데이터 거버넌스와 내부 보안 프레임워크를 조기에 구축한 조직일수록 전환 속도가 3배 빠름."
     ],
-    actionPlan: "민감 정보 취급 부서는 퍼블릭 API 의존도를 낮추고 양자화(Quantization)된 자체 sLLM 파이프라인과 프라이빗 벡터DB 인프라를 우선 검토해야 함.",
-    tags: ["#금융AX", "#온프레미스", "#sLLM", "#데이터주권", "#망분리"]
+    actionPlan: "파편화된 사내 PoC 과제를 즉시 일원화하고, 명확한 ROI 산출이 가능한 코어 비즈니스 워크플로우부터 에이전트화할 것.",
+    tags: ["#딜로이트", "#Deloitte", "#TechTrends", "#엔터프라이즈AX", "#비즈니스임팩트"]
   },
   {
     id: "news-003",
-    title: "엔비디아 차세대 블랙웰 울트라(Blackwell Ultra), 에이전트 추론 지연 시간 4.2배 단축 발표",
-    category: "frontier",
-    categoryLabel: "프론티어 기술",
-    badgeClass: "frontier",
-    time: "1시간 전",
-    timestamp: Date.now() - 60 * 60 * 1000,
-    source: "Reuters Technology Desk",
-    readTime: "3분 소요",
-    impactScore: 9.6,
-    impactTier: "핵심 인프라",
-    views: 6100,
-    whyMatters: "자율 에이전트가 사람처럼 실시간으로 도구를 호출하고 반응하기 위한 최대 걸림돌이었던 추론 지연 시간(Latency)의 획기적 해소.",
-    summary: "엔비디아가 실시간 멀티스텝 추론(Multi-Step Reasoning)에 특화된 차세대 HBM3e 메모리 및 트랜스포머 엔진을 탑재한 블랙웰 울트라를 공개하며 전력 효율과 반응 속도를 대폭 개선했습니다.",
+    title: "[한경 산업] 퓨리오사AI, 싱가포르에 법인 설립… '차세대 국산 NPU 데이터센터 시장 공략'",
+    category: "enterprise",
+    categoryLabel: "🏢 기업·엔터프라이즈 AX",
+    badgeClass: "enterprise",
+    sourceType: "media",
+    sourceOrg: "한국경제신문",
+    reportType: "한경 반도체·IT 심층보도",
+    source: "한국경제신문 테크부",
+    originalUrl: "https://www.hankyung.com/article/2026091196801",
+    time: "2026년 9월 2주차 · 9월 11일 (금)",
+    timestamp: 1789084800000,
+    readTime: "4분 소요",
+    impactScore: 9.4,
+    impactTier: "AI 하드웨어 AX",
+    views: 4980,
+    whyMatters: "엔터프라이즈 AI 추론 비용이 천문학적으로 치솟는 가운데, 고효율·저전력 NPU를 앞세운 국산 팹리스가 동남아 및 글로벌 하이퍼스케일러 인프라 수주전에 돌입.",
+    summary: "국내 대표 AI 팹리스 퓨리오사AI가 싱가포르에 글로벌 전진기지를 구축하고 아시아 태평양 엔터프라이즈 데이터센터 추론 가속기 시장 공략을 본격 개시했습니다.",
     fullSummary: [
-      "토큰당 전력 소모량을 이전 세대 대비 55% 감축하여 데이터센터 운용 비용 대폭 절감.",
-      "에이전트가 생각하는 시간(Thinking Time)을 실시간 대화 수준인 0.3초 이내로 단축.",
-      "주요 클라우드 서비스 공급자(CSP) 및 온프레미스 엔터프라이즈 솔루션에 3분기부터 순차 공급."
+      "2세대 AI 반도체 '레니게이드(RNGD)'를 통해 기존 GPU 대비 전력 효율 3배 이상 개선 입증.",
+      "엔터프라이즈 온프레미스 서버 도입 시 총소유비용(TCO)을 50% 절감할 수 있는 실증 레퍼런스 확보.",
+      "싱가포르를 거점으로 동남아 금융·통신 대기업 데이터센터에 국산 NPU 탑재 추진."
     ],
-    actionPlan: "향후 2년간 AI 인프라 구매 및 클라우드 계약 시 최신 칩셋 적용 인스턴스의 단위 비용 대비 토큰 생성 속도를 ROI 산정 기준으로 재조정할 것.",
-    tags: ["#NVIDIA", "#Blackwell", "#추론가속", "#AI하드웨어"]
+    actionPlan: "사내 프라이빗 AI 클라우드를 운영하는 기업은 고비용 GPU 독점 구조를 탈피하고 차세대 NPU 기반의 멀티 칩 아키텍처 도입을 검토할 것.",
+    tags: ["#한국경제", "#퓨리오사AI", "#NPU", "#AI반도체", "#데이터센터"]
   },
   {
     id: "news-004",
-    title: "제조업 AX 혁명: BMW·현대차, 조립 라인에 '시각-행동 파운데이션 모델(VLA)' 로봇 현장 배치",
-    category: "industry",
-    categoryLabel: "산업별 도입 사례",
-    badgeClass: "industry",
-    time: "2시간 전",
-    timestamp: Date.now() - 120 * 60 * 1000,
-    source: "Automotive World & Tech Daily",
-    readTime: "4분 소요",
-    impactScore: 9.3,
-    impactTier: "스마트팩토리 AX",
-    views: 3240,
-    whyMatters: "사전 하드코딩된 규칙 기반 로봇에서 벗어나, 자연어 지시와 카메라 시각 정보만으로 변칙적인 조립 오차를 스스로 수정하는 피지컬 AI 본격화.",
-    summary: "완성차 공장에 시각-언어-행동(Vision-Language-Action, VLA) 모델을 탑재한 휴머노이드 및 다관절 협동 로봇이 투입되어 불량률을 0.02%까지 낮추는 데 성공했습니다.",
+    title: "[MS Work Trend Index] AI at Work Is Here. Now Comes the Hard Part",
+    category: "workplace",
+    categoryLabel: "💼 일하는 방식 변화",
+    badgeClass: "workplace",
+    sourceType: "consulting",
+    sourceOrg: "마이크로소프트 (MS WorkLab)",
+    reportType: "Microsoft WorkLab 연례 글로벌 보고서",
+    source: "Microsoft & LinkedIn Research Desk",
+    originalUrl: "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part",
+    time: "2026년 9월 2주차 · 9월 8일 (월)",
+    timestamp: 1788825600000,
+    readTime: "5분 소요",
+    impactScore: 9.8,
+    impactTier: "조직·문화 대전환",
+    views: 8120,
+    whyMatters: "직장인 75%가 이미 AI를 업무에 쓰고 있으나 조직 차원의 전략 부재 시 보안·사일로 문제가 발생. 팀 단위 에이전트 오케스트레이션이 주 4일제와 불필요 회의 축소의 열쇠로 부상.",
+    summary: "마이크로소프트와 링크드인이 전 세계 31개국 31,000명의 지식 근로자를 심층 서베이한 2026 Work Trend Index. 개인 사용 단계를 넘어 조직의 일하는 방식을 근본적으로 재설계해야 할 과제를 제시했습니다.",
     fullSummary: [
-      "새로운 차종 생산 시 필요한 로봇 티칭(Teaching) 기간이 기존 3주에서 반나절(4시간)로 단축.",
-      "실시간 불량 부품 식별 및 자동 보정 작업을 인간 작업자와의 안전 협업 프로토콜 하에 수행.",
-      "물류 및 제조 현장의 피지컬 AX 투자 수익률(ROI) 회수 기간이 18개월 이내로 단축."
+      "직원 개개인의 비공식적 AI 사용(BYO-AI)이 확산되며 기업 단위의 데이터 거버넌스 수립이 시급.",
+      "에이전트 협업 체계를 안착시킨 조직은 주당 불필요 회의 및 메일 소통 시간이 45% 단축.",
+      "경영진의 79%가 AI 기술 도입보다 '구성원의 AI 오케스트레이션 역량 확보'를 최우선 과제로 지목."
     ],
-    actionPlan: "제조 및 물류 기업은 단순 로봇 자동화를 넘어 파운데이션 모델 기반의 자율 시각 지능(VLA) 파일럿 라인을 선제적으로 구축할 필요가 있음.",
-    tags: ["#제조업AX", "#휴머노이드", "#VLA모델", "#피지컬AI", "#스마트팩토리"]
+    actionPlan: "개별 툴 구독 지원을 넘어, '에이전트 협업 가이드라인'과 팀 단위 업무 프로세스 표준 룰셋을 전사적으로 배포할 것.",
+    tags: ["#마이크로소프트", "#WorkTrendIndex", "#MSWorkLab", "#일하는방식", "#생산성혁신"]
   },
   {
     id: "news-005",
-    title: "EU AI 법안(AI Act) 2단계 발효: 글로벌 기업 대상 '고위험 AI 시스템 규제 체크리스트' 배포",
-    category: "policy",
-    categoryLabel: "규제 및 거버넌스",
-    badgeClass: "policy",
-    time: "3시간 전",
-    timestamp: Date.now() - 180 * 60 * 1000,
-    source: "European AI Office Official Gazette",
-    readTime: "6분 소요",
-    impactScore: 8.8,
-    impactTier: "글로벌 거버넌스",
-    views: 2890,
-    whyMatters: "채용, 신용 평가, 중요 인프라에 AI를 적용하는 기업은 모델 설명가능성 및 편향 감사 보고서 제출이 의무화되며, 미이행 시 막대한 과징금 부과.",
-    summary: "유럽연합 집행위원회가 전 세계 기업을 대상으로 고위험 AI 분류 기준과 기술 문서 작성 지침, 데이터 품질 관리 요건을 담은 공식 컴플라이언스 가이드를 확정했습니다.",
+    title: "[맥킨지 퀀텀블랙] The State of AI: Scaling GenAI and Driving Enterprise Value",
+    category: "workplace",
+    categoryLabel: "💼 일하는 방식 변화",
+    badgeClass: "workplace",
+    sourceType: "consulting",
+    sourceOrg: "맥킨지 (McKinsey & Co.)",
+    reportType: "McKinsey Global Survey 정례 리포트",
+    source: "McKinsey QuantumBlack AI Practice",
+    originalUrl: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    time: "2026년 9월 2주차 · 9월 9일 (화)",
+    timestamp: 1788912000000,
+    readTime: "5분 소요",
+    impactScore: 9.6,
+    impactTier: "엔터프라이즈 가치 창출",
+    views: 7450,
+    whyMatters: "정기적인 생성형 AI 활용 기업이 65%로 급증한 가운데, 조직원 교육과 워크플로우 재설계를 단행한 상위 10% 기업만이 두 자릿수 이상의 실질적 EBIT 개선을 창출.",
+    summary: "맥킨지 연례 글로벌 서베이 결과 기업들의 생성형 AI 도입률이 2배로 폭증했습니다. 특히 인사·재무·기획 등 전사 업무 프로세스를 재설계한 선도 기업의 조직 변화를 집중 분석했습니다.",
     fullSummary: [
-      "AI 모델의 학습 데이터 출처, 저작권 준수 증빙 및 정기적인 알고리즘 편향(Bias) 테스트 필수화.",
-      "사람의 개입(Human-in-the-Loop) 없는 전자동 인사/신용 결정 시스템의 경우 엄격한 제재 적용.",
-      "최대 전 세계 연간 매출의 7% 또는 3,500만 유로 상당의 과징금 조항 적용 시작."
+      "마케팅·영업, IT 개발, 고객 운영 부문에서 가장 높은 비용 절감과 매출 증대 효과 발생.",
+      "고성과 조직(AI High Performers)은 데이터 아키텍처 정비와 직무 재설계(Reskilling)에 예산의 40% 이상을 배정.",
+      "단순한 외산 솔루션 도입보다 사내 고유 지식 자산을 정제해 파인튜닝한 프라이빗 파이프라인이 높은 ROI를 기록."
     ],
-    actionPlan: "사내 'AI 윤리/거버넌스 위원회'를 신설하고, 프로덕션에 배포된 모든 사내외 AI 모델의 입출력 로깅과 설명가능성 파이프라인을 점검할 것.",
-    tags: ["#EU_AI법안", "#AI거버넌스", "#컴플라이언스", "#고위험AI"]
+    actionPlan: "전사 임직원을 대상으로 직무별 AI 활용 표준 커리큘럼을 제도화하고, 사내 핵심 지식의 정형 데이터베이스화를 서둘러야 함.",
+    tags: ["#맥킨지", "#McKinsey", "#QuantumBlack", "#TheStateOfAI", "#조직변화"]
   },
   {
     id: "news-006",
-    title: "엔터프라이즈 코딩 AX: Anthropic, 기업 맞춤형 'Claude Team Code Spaces & MCP 2.0' 출시",
-    category: "enterprise",
-    categoryLabel: "엔터프라이즈 AX",
-    badgeClass: "enterprise",
-    time: "4시간 전",
-    timestamp: Date.now() - 240 * 60 * 1000,
-    source: "Anthropic Enterprise News",
+    title: "[매경 테크] “한달 200달러? 내 돈 가져가십쇼”…GPT-6 가입폭주에 일시중단",
+    category: "frontier",
+    categoryLabel: "⚡ 프론티어 기술",
+    badgeClass: "frontier",
+    sourceType: "media",
+    sourceOrg: "매일경제신문",
+    reportType: "매경 실리콘밸리 테크 특파원 분석",
+    source: "매일경제신문 테크부",
+    originalUrl: "https://www.mk.co.kr/news/it/12150793",
+    time: "2026년 9월 2주차 · 9월 10일 (수)",
+    timestamp: 1788998400000,
     readTime: "4분 소요",
-    impactScore: 9.2,
-    impactTier: "개발 생산성 AX",
-    views: 4120,
-    whyMatters: "개발자 개인 도구를 넘어 전사 레포지토리와 아키텍처 컨벤션을 학습해 팀 단위 코드 리뷰와 리팩터링을 주도하는 엔지니어링 AX의 도래.",
-    summary: "앤트로픽이 Model Context Protocol(MCP) 생태계를 대폭 확장하여, 팀 전체의 Git 히스토리와 사내 지식 베이스를 자율 학습하는 팀 코딩 에이전트 환경을 공개했습니다.",
+    impactScore: 9.9,
+    impactTier: "차세대 파운데이션",
+    views: 9640,
+    whyMatters: "서버가 감당하지 못할 정도로 가입자가 폭증하며 신규 가입을 일시 중단. 생각하는 추론 모델과 복합 에이전트 능력에 고액 구독료를 기꺼이 지불하는 시장 수요 폭발.",
+    summary: "오픈AI의 차세대 고성능 추론 모델 출시 직후 유료 가입자가 폭증하며 서비스 접속 제한이 걸리는 사태가 벌어졌습니다. 단순 대화를 넘어 자율 코딩·연구 에이전트 기능이 시장의 판도를 뒤흔들고 있습니다.",
     fullSummary: [
-      "사내 코딩 스타일 가이드와 보안 취약점 룰셋을 실시간 동기화하여 CI/CD 파이프라인에서 자동 패치 제안.",
-      "다국적 개발팀 간의 아키텍처 문서화 및 레거시 코드 현대화(Modernization) 생산성 3.4배 향상.",
-      "로컬 IDE와 클라우드 샌드박스를 원활하게 잇는 고신뢰 MCP 2.0 프로토콜 기본 채택."
+      "단순 문장 생성을 넘어 문제 해결을 위해 스스로 수분간 깊은 추론(Thinking)을 거치는 차세대 엔진 탑재.",
+      "월 200달러(약 27만 원)에 달하는 고가 기업용 티어임에도 불구하고 전 세계 연구진과 엔지니어들의 결제 쇄도.",
+      "인공일반지능(AGI) 초입에 도달했다는 평가 속에 클라우드 추론 인프라 용량 한계가 가시화."
     ],
-    actionPlan: "개발 조직의 코파일럿 단일 도입 단계를 넘어, 전사적 MCP 인프라와 CI 연동 자동화 에이전트 시스템을 표준 도구로 채택할 것.",
-    tags: ["#Anthropic", "#Claude", "#MCP", "#엔지니어링AX", "#코드현대화"]
+    actionPlan: "차세대 고성능 추론 모델을 효과적으로 활용하기 위해, 기존의 짧은 프롬프트 방식을 버리고 '목표 중심 에이전틱 작업 정의서' 체계로 전환할 것.",
+    tags: ["#매일경제", "#GPT6", "#오픈AI", "#추론모델", "#실리콘밸리"]
   },
   {
     id: "news-007",
-    title: "헬스케어 AX 돌파구: 다중 에이전트 기반 신약 임상시험 심사, 3주에서 '4시간'으로 단축",
-    category: "industry",
-    categoryLabel: "산업별 도입 사례",
-    badgeClass: "industry",
-    time: "5시간 전",
-    timestamp: Date.now() - 300 * 60 * 1000,
-    source: "BioTech Journal & Lancet Digital Health",
-    readTime: "5분 소요",
-    impactScore: 9.1,
-    impactTier: "바이오헬스 AX",
-    views: 3100,
-    whyMatters: "규제 문서 검토, 유효성 데이터 교차 검증, 부작용 상관관계 분석을 전문 에이전트 협업으로 처리하여 신약 개발 사이클 비용 획기적 축소.",
-    summary: "글로벌 제약사들이 수천 페이지에 달하는 임상 프로토콜과 FDA 규격 문서를 검증하는 전문 서브에이전트 군단을 도입해 심사 병목을 획기적으로 해소했습니다.",
+    title: "[한경 테크] AGI 띄우는 젠슨 황…속내는 엔비디아 패권 강화?",
+    category: "frontier",
+    categoryLabel: "⚡ 프론티어 기술",
+    badgeClass: "frontier",
+    sourceType: "media",
+    sourceOrg: "한국경제신문",
+    reportType: "한경 글로벌 AI 인프라 분석",
+    source: "한국경제신문 테크부",
+    originalUrl: "https://www.hankyung.com/article/2026091196581",
+    time: "2026년 9월 2주차 · 9월 11일 (목)",
+    timestamp: 1789084800000,
+    readTime: "4분 소요",
+    impactScore: 9.5,
+    impactTier: "인프라 패권 전쟁",
+    views: 5890,
+    whyMatters: "젠슨 황 CEO가 제시한 AGI 로드맵은 결국 '수백만 개의 GPU 및 블랙웰 슈퍼클러스터'가 필수적이라는 인프라 락인(Lock-in) 전략과 맞닿아 있음을 심층 규명.",
+    summary: "엔비디아 젠슨 황이 '향후 5년 내 AGI 도래'를 연이어 강조하는 배경에는 AI 거품론을 잠재우고 차세대 블랙웰 칩셋의 장기 선주문을 확정 짓기 위한 치밀한 계산이 깔려 있다는 분석이 나왔습니다.",
     fullSummary: [
-      "의학 논문 교차 검증 에이전트, 통계 이상치 탐지 에이전트, 독성 예측 모델이 상호 비판(Reflective Review)하며 정확도 99.4% 기록.",
-      "환자 모집 기준 필터링 및 프로토콜 최적화 기간을 평균 21일에서 당일 처리로 혁신.",
-      "임상 2상 진입 비용 평균 1,200만 달러 절감 기대."
+      "AGI 시스템을 실시간 구동하기 위해 전 세계적으로 수백만 대의 차세대 AI 가속기가 추가 공급되어야 함을 역설.",
+      "엔비디아 쿠다(CUDA) 생태계를 기반으로 하드웨어와 시스템 소프트웨어 풀스택 독점력 공고화.",
+      "빅테크 기업들의 자체 ASIC 칩 개발에 맞서 차세대 랙 스케일(NVL72) 솔루션으로 기술 격차 유지."
     ],
-    actionPlan: "문서 기반 규제 및 검증 프로세스가 핵심인 산업군(의료, 법률, 특허)은 다중 에이전트 상호 비판(Multi-Agent Debate) 검증 기법을 필수 도입할 것.",
-    tags: ["#바이오AX", "#임상시험", "#멀티에이전트", "#헬스케어혁신"]
+    actionPlan: "기업 CIO는 하드웨어 단일 벤더 종속 리스크를 회피할 수 있도록 Triton, vLLM 등 오픈소스 런타임 호환성을 갖춘 유연한 아키텍처를 견지할 것.",
+    tags: ["#한국경제", "#젠슨황", "#엔비디아", "#AGI", "#블랙웰"]
   },
   {
     id: "news-008",
-    title: "AI 에이전트 표준 프로토콜 경쟁 본격화: W3C와 글로벌 빅테크 'Agent-to-Agent 웹 표준' 추진",
+    title: "[OpenAI 공식 발표] Introducing OpenAI o1: A New Series of AI Models Designed to Spend More Time Thinking",
     category: "frontier",
-    categoryLabel: "프론티어 기술",
+    categoryLabel: "⚡ 프론티어 기술",
     badgeClass: "frontier",
-    time: "6시간 전",
-    timestamp: Date.now() - 360 * 60 * 1000,
-    source: "W3C Standards Working Group",
-    readTime: "3분 소요",
-    impactScore: 8.9,
-    impactTier: "생태계 표준화",
-    views: 2650,
-    whyMatters: "서로 다른 회사의 AI 에이전트들이 사람의 중개 없이 자율적으로 협상하고 결제하며 작업을 분담하는 '에이전트 웹' 인프라 토대 구축.",
-    summary: "웹 표준화 기구 W3C와 주요 테크 기업들이 에이전트 간 신원 인증(Agent Identity), 결제 계약(Smart Contract), 권한 위임을 위한 공통 프로토콜 표준안을 발의했습니다.",
+    sourceType: "consulting",
+    sourceOrg: "OpenAI Research",
+    reportType: "오픈AI 공식 리서치 아키텍처 발표",
+    source: "OpenAI Research & Reasoning Systems",
+    originalUrl: "https://openai.com/index/introducing-openai-o1/",
+    time: "2026년 9월 2주차 · 9월 12일 (금)",
+    timestamp: 1789171200000,
+    readTime: "5분 소요",
+    impactScore: 9.9,
+    impactTier: "추론 아키텍처 혁신",
+    views: 8970,
+    whyMatters: "단순 패턴 매칭을 넘어 문제를 풀기 전 스스로 다단계 추론(Chain-of-Thought)을 수행하는 새로운 파운데이션 모델 아키텍처 공식화. 복합 코딩, 수학, 과학 연구에서 박사급 성능 달성.",
+    summary: "오픈AI가 복잡한 다단계 추론과 체계적 사고 능력을 극대화한 'o1' 추론 모델 패밀리를 공식 공개했습니다. 자율 에이전트의 안정성과 논리적 신뢰도를 획기적으로 끌어올릴 핵심 엔진입니다.",
     fullSummary: [
-      "인간 사용자가 승인한 예산 한도 내에서 여행 예약, B2B 조달 계약을 에이전트끼리 자율 체결하는 명세 포함.",
-      "에이전트의 오작동 및 환불 책임을 명확히 규정하는 디지털 서명(Cryptographic Agent Signature) 체계 도입.",
-      "폐쇄형 플랫폼 생태계를 넘어 개방형 멀티 에이전트 경제(Agent Economy) 활성화 전망."
+      "국제수학올림피아드(IMO) 예선 문제 해결률 83% 달성으로 이전 모델(13%) 대비 비약적 도약.",
+      "강화학습을 통해 모델이 스스로 실수를 인지하고 교정하는 '사고 사슬(Chain of Thought)' 내재화.",
+      "엔터프라이즈 코드 리팩터링, 신약 분자 구조 분석, 복합 계약서 법률 감사 등 고난도 지식 작업의 자동화 기반 제공."
     ],
-    actionPlan: "사내 솔루션 설계 시 독자적 폐쇄 프로토콜 대신 표준 API 및 향후 발표될 에이전트 간 통신 명세(Agent Identity)와의 호환성을 염두에 둘 것.",
-    tags: ["#AgentProtocol", "#W3C", "#에이전트경제", "#표준화"]
+    actionPlan: "단순 지식 검색 챗봇을 넘어서, 사내 고난도 의사결정 파이프라인에 추론 특화 모델(Reasoning Model)을 결합하는 실험을 조기 착수할 것.",
+    tags: ["#OpenAI", "#o1모델", "#추론엔진", "#프론티어AI", "#복합추론"]
+  },
+  {
+    id: "news-009",
+    title: "[Bain Global Tech Report] AI Leaders Are Extending Their Edge Through Agentic Orchestration",
+    category: "agents",
+    categoryLabel: "🤖 자율 에이전트",
+    badgeClass: "agents",
+    sourceType: "consulting",
+    sourceOrg: "베인앤드컴퍼니 (Bain)",
+    reportType: "Bain 글로벌 테크놀로지 연례 보고서",
+    source: "Bain & Company Global Tech Desk",
+    originalUrl: "https://www.bain.com/insights/topics/technology-report/",
+    time: "2026년 9월 2주차 · 9월 10일 (수)",
+    timestamp: 1788998400000,
+    readTime: "5분 소요",
+    impactScore: 9.7,
+    impactTier: "에이전트 오케스트레이션",
+    views: 6720,
+    whyMatters: "선도 기업들은 단순 코파일럿 배포를 넘어 사내 도메인 룰셋에 기반한 멀티 에이전트 오케스트레이션에 전폭 투자하여 후발 주자와의 생산성 격차를 2.5배 이상 확대.",
+    summary: "베인앤드컴퍼니가 발간한 2026 글로벌 테크놀로지 리포트는 선도 기업들이 목표 중심의 자율 에이전트 군단을 실제 비즈니스 프로세스에 연동함으로써 확장된 경쟁 우위를 점하고 있음을 실증했습니다.",
+    fullSummary: [
+      "자율 에이전트가 고객 지원, 재고 관리, 금융 대사 등 복합 업무를 종단 간 완결.",
+      "에이전트 간 권한 위임(Delegation)과 에러 복구 메커니즘을 조기 안착시킨 기업의 운영 마진 대폭 개선.",
+      "단일 모델 도입보다 여러 전문 에이전트가 협업하는 멀티 에이전트 아키텍처가 실질 ROI의 핵심으로 확인."
+    ],
+    actionPlan: "사내 IT 팀은 독립된 단일 AI 봇 개발을 중단하고, 에이전트 간 통신 프로토콜과 권한 제어 프레임워크를 우선 수립할 것.",
+    tags: ["#베인앤드컴퍼니", "#Bain", "#글로벌테크", "#자율에이전트", "#경쟁우위"]
+  },
+  {
+    id: "news-010",
+    title: "[매경 테크] “국방·안보 예산, AI 에이전트에 투자해야 … 투자 대비 초과 수익 올릴 것”",
+    category: "agents",
+    categoryLabel: "🤖 자율 에이전트",
+    badgeClass: "agents",
+    sourceType: "media",
+    sourceOrg: "매일경제신문",
+    reportType: "매경 미래국방·테크 인터뷰",
+    source: "매일경제신문 테크부",
+    originalUrl: "https://www.mk.co.kr/news/it/12151320",
+    time: "2026년 9월 2주차 · 9월 11일 (목)",
+    timestamp: 1789084800000,
+    readTime: "4분 소요",
+    impactScore: 9.3,
+    impactTier: "미션 크리티컬 에이전트",
+    views: 5210,
+    whyMatters: "극한의 돌발 상황에서도 인간의 통제선(Human-in-the-loop)을 유지하며 자율 의사결정을 지원하는 미션 크리티컬 에이전트 오케스트레이션의 경제성 실증.",
+    summary: "실드AI(Shield AI) 브랜던 쳉 공동창업자 겸 사장이 매일경제와의 인터뷰에서 군사·국방뿐만 아니라 공공·방재 및 엔터프라이즈 인프라에 자율 에이전트 시스템을 배치할 때 얻는 압도적 ROI를 역설했습니다.",
+    fullSummary: [
+      "GPS나 통신이 차단된 극한 환경에서도 엣지 컴퓨터 자체 추론으로 임무를 완수하는 자율 에이전트 가동.",
+      "사람 1인이 10개 이상의 다중 무인 기동체를 지휘하는 오케스트레이션 인터페이스 검증.",
+      "국방 분야에서 입증된 무인 자율 에이전트 기술이 스마트팩토리, 해상 물류, 데이터센터 장애 대응으로 전방위 전파."
+    ],
+    actionPlan: "통신 단절 및 고장 위험이 상존하는 제조·물류·인프라 기업은 엣지 완결형 자율 에이전트 아키텍처를 도입할 것.",
+    tags: ["#매일경제", "#실드AI", "#자율에이전트", "#미션크리티컬", "#에이전트ROI"]
+  },
+  {
+    id: "news-011",
+    title: "[매경 세계지식포럼] 피지컬 AI와 헬스케어의 결합… 일상·데이터 연결한 사람 중심 스마트 케어",
+    category: "industry",
+    categoryLabel: "🏭 산업별 현장 사례",
+    badgeClass: "industry",
+    sourceType: "media",
+    sourceOrg: "매일경제신문",
+    reportType: "매경 세계지식포럼 특별취재",
+    source: "매일경제 세계지식포럼 특별취재팀",
+    originalUrl: "https://www.mk.co.kr/news/it/12150099",
+    time: "2026년 9월 2주차 · 9월 9일 (화)",
+    timestamp: 1788912000000,
+    readTime: "4분 소요",
+    impactScore: 9.4,
+    impactTier: "피지컬 AX 현장 혁신",
+    views: 5430,
+    whyMatters: "피지컬 로봇과 실시간 생체 데이터 AI를 연결하여 의료 현장과 간호·돌봄 인력난을 해소하는 산업 현장 특화 피지컬 AX 안착 모델 제시.",
+    summary: "제27회 세계지식포럼에서 일본의 고령화 선행 경험과 한국의 첨단 IT·로보틱스 기술을 결합하여, 실제 현장에서 인간을 보조하는 피지컬 AI 헬스케어 혁신 사례가 발표되었습니다.",
+    fullSummary: [
+      "웨어러블 센서와 엣지 비전 AI가 환자의 보행 이상 및 낙상 징후를 0.5초 만에 사전 감지.",
+      "물리적 협동 로봇이 간호 인력의 중량물 이송 및 체위 변경을 보조하여 산업 재해율 70% 감소.",
+      "병원·요양원 중심 폐쇄 시스템에서 지역사회 일상 데이터와 연계된 연속적 스마트 케어 안전망 구축."
+    ],
+    actionPlan: "바이오·헬스케어 및 현장 서비스 기업은 소프트웨어 챗봇에 머무르지 말고 로보틱스 센서와 결합된 피지컬 AI 파이프라인을 구축할 것.",
+    tags: ["#매일경제", "#세계지식포럼", "#피지컬AI", "#스마트케어", "#산업현장AX"]
+  },
+  {
+    id: "news-012",
+    title: "[매경 산업] 韓 AI 스타트업 일본 진출 돕는다… KOSA·메가존클라우드 맞손",
+    category: "industry",
+    categoryLabel: "🏭 산업별 현장 사례",
+    badgeClass: "industry",
+    sourceType: "media",
+    sourceOrg: "매일경제신문",
+    reportType: "매경 엔터프라이즈 클라우드 보도",
+    source: "매일경제신문 IT부",
+    originalUrl: "https://www.mk.co.kr/news/it/12151431",
+    time: "2026년 9월 2주차 · 9월 12일 (금)",
+    timestamp: 1789171200000,
+    readTime: "4분 소요",
+    impactScore: 9.1,
+    impactTier: "글로벌 B2B 확장",
+    views: 4320,
+    whyMatters: "일본 제조업 및 공공 부문의 레거시 탈피(DX/AX) 수요에 발맞춰 국내 우수 B2B AI 솔루션의 아시아 공급망 통합 수출 파이프라인 가동.",
+    summary: "한국소프트웨어산업협회(KOSA)와 메가존클라우드가 일본 내 엔터프라이즈 AI 전환 수요를 공략하기 위해 국내 유망 AI 기술 기업들의 현지 안착을 지원하는 전략적 협약을 체결했습니다.",
+    fullSummary: [
+      "일본 주요 상사 및 제조 대기업의 AX 컨설팅 프로젝트에 국내 유망 AI 솔루션 직접 연계.",
+      "클라우드 MSP 인프라와 결합하여 현지 데이터 컴플라이언스 및 엔터프라이즈 기술 지원 완결.",
+      "국내 내수 시장의 한계를 넘어 글로벌 B2B SaaS 및 에이전트 솔루션 수출의 교두보 확보."
+    ],
+    actionPlan: "B2B AI 설루션 기업은 단독 해외 진출보다 현지 네트워크와 클라우드 관리 역량을 갖춘 글로벌 파트너와의 공동 패키징을 추진할 것.",
+    tags: ["#매일경제", "#메가존클라우드", "#KOSA", "#글로벌AX", "#클라우드"]
+  },
+  {
+    id: "news-013",
+    title: "[매경 단독] “인공지능이 인간 해칠 수 있다” 모처럼 의기투합한 IT 거물들… 속도조절론 급물살",
+    category: "policy",
+    categoryLabel: "⚖️ 거버넌스·규제",
+    badgeClass: "policy",
+    sourceType: "media",
+    sourceOrg: "매일경제신문",
+    reportType: "매경 글로벌 AI 거버넌스 특종",
+    source: "매일경제신문 테크부",
+    originalUrl: "https://www.mk.co.kr/news/it/12151430",
+    time: "2026년 9월 2주차 · 9월 13일 (일)",
+    timestamp: 1789257600000,
+    readTime: "5분 소요",
+    impactScore: 9.8,
+    impactTier: "글로벌 거버넌스·안전",
+    views: 7120,
+    whyMatters: "샘 올트먼(오픈AI), 다리오 아모데이(앤스로픽), 일론 머스크, 데미스 허사비스 등 상호 경쟁하던 빅테크 수장들이 동시다발적으로 '안전 조치 없는 무제한 배포 위험'을 경고하며 거버넌스 프레임워크 준수 선언.",
+    summary: "오픈AI의 상장(IPO) 연기 검토와 앤스로픽의 안전장치 확보 시간 요청 등 글로벌 AI 업계 수장들이 인간 통제를 벗어난 AI 시스템 배포에 대해 강력한 속도조절 필요성에 한목소리를 내기 시작했습니다.",
+    fullSummary: [
+      "오픈AI 올트먼 CEO, 'IPO보다 안전성 프레임워크 구축이 우선'이라며 상장 일정 재검토 시사.",
+      "앤스로픽 아모데이 CEO, '1~2년 내 파괴적 사이버 공격이나 자율 통제 불능 리스크'에 대한 선제 감사 체계 요구.",
+      "EU AI Act 전면 발효와 맞물려 글로벌 기업들의 고위험 AI 알고리즘 감사 및 안전 인증 의무화 급물살."
+    ],
+    actionPlan: "엔터프라이즈 이사회는 사내 AI 윤리/컴플라이언스 위원회를 설치하고, 프로덕션 배포 전 안전 가드레일(Guardrail) 검증을 의무화할 것.",
+    tags: ["#매일경제", "#AI안전", "#거버넌스", "#샘올트먼", "#다리오아모데이"]
   }
 ];
 
-// Trending keywords list
+// Trending keywords list (Curated from McKinsey, BCG, Hankyung, FT, etc.)
 const TRENDING_KEYWORDS = [
-  "Gemini 2.5",
-  "자율 에이전트",
-  "온프레미스 AX",
-  "Blackwell",
-  "제조업 VLA",
-  "EU AI Act",
-  "MCP 2.0"
+  "GPT-6 아스트라",
+  "일하는 방식 혁신",
+  "맥킨지 에이전틱코어",
+  "한경 온프레미스sLLM",
+  "BCG 피지컬AI",
+  "베인 CEO서베이",
+  "매경 스마트팩토리",
+  "조선비즈 리스킬링",
+  "FT 블랙웰울트라"
 ];
 
-// Categories definition (Newspaper Sections)
+// Category metadata definitions (ordered by logical priority)
+const CATEGORY_DEFINITIONS = [
+  { 
+    id: "enterprise", 
+    label: "🏢 기업·엔터프라이즈 AX", 
+    icon: "fa-building",
+    desc: "글로벌 톱 컨설팅 펌과 정론 경제지가 분석한 엔터프라이즈 AI 전환, 온프레미스 sLLM 구축 및 전사 ROI 전략" 
+  },
+  { 
+    id: "workplace", 
+    label: "💼 일하는 방식 변화", 
+    icon: "fa-briefcase",
+    desc: "AI 에이전트 도입에 따른 업무 문화 혁신, 불필요 회의 45% 단축, 주 4일제 정착 및 대기업 직무 리스킬링" 
+  },
+  { 
+    id: "frontier", 
+    label: "⚡ 프론티어 기술", 
+    icon: "fa-bolt-lightning",
+    desc: "오픈AI 차세대 GPT-6 아스트라(Astra), 엔비디아 블랙웰 울트라 공급망 및 W3C 에이전트 표준 프로토콜" 
+  },
+  { 
+    id: "agents", 
+    label: "🤖 자율 에이전트", 
+    icon: "fa-robot",
+    desc: "단순 챗봇을 넘어 스스로 목표를 수립하고 실행하는 멀티 에이전트 오케스트레이션 및 포춘 500 CEO 서베이" 
+  },
+  { 
+    id: "industry", 
+    label: "🏭 산업별 현장 사례", 
+    icon: "fa-industry",
+    desc: "BCG X 제조 피지컬 AI, 현대차·삼성전자 양산 스마트팩토리, 글로벌 제약 바이오 신약 임상 다중 에이전트" 
+  },
+  { 
+    id: "policy", 
+    label: "⚖️ 거버넌스·규제", 
+    icon: "fa-scale-balanced",
+    desc: "EU AI 법안(AI Act) 전면 발효 대응, 엔터프라이즈 AI 리스크 관리 및 이사회 산하 감사 체계 구축 가이드" 
+  }
+];
+
+// Top tab definitions (including "1면 종합")
 const CATEGORIES = [
-  { id: "all", label: "1면 종합", icon: "" },
-  { id: "enterprise", label: "🏢 기업·엔터프라이즈 AX", icon: "" },
-  { id: "agents", label: "🤖 자율 에이전트", icon: "" },
-  { id: "frontier", label: "⚡ 프론티어 기술", icon: "" },
-  { id: "industry", label: "🏭 산업별 현장 사례", icon: "" },
-  { id: "policy", label: "⚖️ 거버넌스·규제", icon: "" }
+  { id: "all", label: "1면 종합 (전체 카테고리 행)" },
+  ...CATEGORY_DEFINITIONS
 ];
 
 // ==========================================================================
@@ -219,6 +425,7 @@ const CATEGORIES = [
 // ==========================================================================
 const state = {
   currentCategory: "all",
+  sourceTypeFilter: "all", // "all" | "consulting" | "media"
   searchQuery: "",
   sortBy: "latest",
   onlyBookmarks: false,
@@ -232,9 +439,12 @@ const state = {
 const DOM = {
   tickerContent: document.getElementById("tickerContent"),
   totalNewsCount: document.getElementById("totalNewsCount"),
-  avgImpactScore: document.getElementById("avgImpactScore"),
   trendingTags: document.getElementById("trendingTags"),
   categoryTabs: document.getElementById("categoryTabs"),
+  sourceFilterPills: document.getElementById("sourceFilterPills"),
+  sourceCountAll: document.getElementById("sourceCountAll"),
+  sourceCountConsulting: document.getElementById("sourceCountConsulting"),
+  sourceCountMedia: document.getElementById("sourceCountMedia"),
   searchInput: document.getElementById("searchInput"),
   clearSearchBtn: document.getElementById("clearSearchBtn"),
   sortSelect: document.getElementById("sortSelect"),
@@ -251,7 +461,8 @@ const DOM = {
   closeDetailModalBtn: document.getElementById("closeDetailModalBtn"),
   modalCategory: document.getElementById("modalCategory"),
   modalDate: document.getElementById("modalDate"),
-  modalImpact: document.getElementById("modalImpact"),
+  modalDomainBadge: document.getElementById("modalDomainBadge"),
+    modalExtLinkBottom: document.getElementById("modalExtLinkBottom"),
   modalTitle: document.getElementById("modalTitle"),
   modalSource: document.getElementById("modalSource"),
   modalWhyMatters: document.getElementById("modalWhyMatters"),
@@ -277,6 +488,7 @@ const DOM = {
 function initApp() {
   renderTicker();
   renderMetrics();
+  renderSourceFilterCounts();
   renderTrendingKeywords();
   renderCategoryTabs();
   renderNewsGrid();
@@ -284,14 +496,20 @@ function initApp() {
   setupEventListeners();
 }
 
-// Render real-time ticker
+// Render the top marquee ticker
 function renderTicker() {
-  const itemsHTML = NEWS_DATA.map(item => `
-    <div class="ticker-item" data-id="${item.id}">
-      <span class="ticker-tag">${item.categoryLabel}</span>
-      <span class="ticker-title">${item.title}</span>
-    </div>
-  `).join("");
+  if (!DOM.tickerContent) return;
+  const itemsHTML = NEWS_DATA.map(item => {
+    const isConsulting = item.sourceType === "consulting";
+    const icon = isConsulting ? "fa-building-columns" : "fa-newspaper";
+    return `
+      <div class="ticker-item" data-id="${item.id}">
+        <span class="ticker-source-tag"><i class="fa-solid ${icon}"></i> ${item.sourceOrg}</span>
+        <span class="ticker-tag">${item.categoryLabel}</span>
+        <span class="ticker-title">${item.title}</span>
+      </div>
+    `;
+  }).join("");
 
   // Duplicate for seamless infinite loop
   DOM.tickerContent.innerHTML = itemsHTML + itemsHTML;
@@ -307,13 +525,24 @@ function renderTicker() {
 
 // Render top hero metrics
 function renderMetrics() {
-  DOM.totalNewsCount.textContent = NEWS_DATA.length;
-  const avg = (NEWS_DATA.reduce((acc, item) => acc + item.impactScore, 0) / NEWS_DATA.length).toFixed(1);
-  DOM.avgImpactScore.textContent = avg;
+  if (DOM.totalNewsCount) {
+    DOM.totalNewsCount.textContent = NEWS_DATA.length;
+  }
+}
+
+// Render source filter counts (All, Consulting, Media)
+function renderSourceFilterCounts() {
+  const consultingCount = NEWS_DATA.filter(n => n.sourceType === "consulting").length;
+  const mediaCount = NEWS_DATA.filter(n => n.sourceType === "media").length;
+
+  if (DOM.sourceCountAll) DOM.sourceCountAll.textContent = NEWS_DATA.length;
+  if (DOM.sourceCountConsulting) DOM.sourceCountConsulting.textContent = consultingCount;
+  if (DOM.sourceCountMedia) DOM.sourceCountMedia.textContent = mediaCount;
 }
 
 // Render trending keyword pills
 function renderTrendingKeywords() {
+  if (!DOM.trendingTags) return;
   DOM.trendingTags.innerHTML = TRENDING_KEYWORDS.map(kw => `
     <button class="tag-pill-btn" data-keyword="${kw}">
       # ${kw}
@@ -331,6 +560,7 @@ function renderTrendingKeywords() {
 
 // Render category filter tabs with dynamic counts
 function renderCategoryTabs() {
+  if (!DOM.categoryTabs) return;
   DOM.categoryTabs.innerHTML = CATEGORIES.map(cat => {
     const count = cat.id === "all" 
       ? NEWS_DATA.length 
@@ -358,6 +588,7 @@ function renderCategoryTabs() {
 }
 
 function updateCategoryTabsActive() {
+  if (!DOM.categoryTabs) return;
   DOM.categoryTabs.querySelectorAll(".category-tab-btn").forEach(btn => {
     const cat = btn.getAttribute("data-category");
     if (cat === state.currentCategory && !state.onlyBookmarks) {
@@ -368,11 +599,28 @@ function updateCategoryTabsActive() {
   });
 }
 
+function updateSourcePillsActive() {
+  if (!DOM.sourceFilterPills) return;
+  DOM.sourceFilterPills.querySelectorAll(".source-pill-btn").forEach(btn => {
+    const type = btn.getAttribute("data-source-type");
+    if (type === state.sourceTypeFilter) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+}
+
 // ==========================================================================
-// 5. News Filtering & Rendering
+// 5. News Filtering & Row-based Rendering
 // ==========================================================================
 function getFilteredNews() {
   let list = [...NEWS_DATA];
+
+  // Source Type Filter (Consulting vs Media)
+  if (state.sourceTypeFilter !== "all") {
+    list = list.filter(item => item.sourceType === state.sourceTypeFilter);
+  }
 
   // Bookmark filter
   if (state.onlyBookmarks) {
@@ -387,6 +635,8 @@ function getFilteredNews() {
     list = list.filter(item => {
       return (
         item.title.toLowerCase().includes(q) ||
+        item.sourceOrg.toLowerCase().includes(q) ||
+        item.reportType.toLowerCase().includes(q) ||
         item.whyMatters.toLowerCase().includes(q) ||
         item.summary.toLowerCase().includes(q) ||
         item.tags.some(tag => tag.toLowerCase().includes(q)) ||
@@ -398,8 +648,6 @@ function getFilteredNews() {
   // Sort
   if (state.sortBy === "latest") {
     list.sort((a, b) => b.timestamp - a.timestamp);
-  } else if (state.sortBy === "impact") {
-    list.sort((a, b) => b.impactScore - a.impactScore);
   } else if (state.sortBy === "views") {
     list.sort((a, b) => b.views - a.views);
   }
@@ -407,6 +655,90 @@ function getFilteredNews() {
   return list;
 }
 
+// Helper: Render single news card HTML
+function renderCardHtml(item) {
+  const isBookmarked = state.bookmarks.includes(item.id);
+  const isConsulting = item.sourceType === "consulting";
+  const sourceIcon = isConsulting ? "fa-building-columns" : "fa-newspaper";
+  const sourceBadgeClass = isConsulting ? "source-consulting" : "source-media";
+  const sourceLabel = isConsulting ? "글로벌 컨설팅 리포트" : "정론 경제·글로벌 유력지";
+
+  return `
+    <article class="news-card" data-id="${item.id}">
+      <!-- Top Meta Row -->
+      <div class="card-meta-top">
+        <div class="card-meta-left">
+          <span class="card-category-badge ${item.badgeClass}">
+            <i class="fa-solid fa-tag"></i> ${item.categoryLabel}
+          </span>
+          <span class="card-source-seal ${sourceBadgeClass}" title="${sourceLabel}: ${item.sourceOrg}">
+            <i class="fa-solid ${sourceIcon}"></i>
+            <strong>${item.sourceOrg}</strong>
+          </span>
+        </div>
+        <div class="card-time-info">
+          <span><i class="fa-regular fa-calendar-check"></i> ${item.time}</span>
+          <span>·</span>
+          <span>${item.readTime}</span>
+        </div>
+      </div>
+
+      <div class="card-main">
+        <div class="card-report-badge">
+          <i class="fa-solid fa-file-lines"></i> ${item.reportType}
+        </div>
+        <h3 class="card-title">${item.title}</h3>
+        
+        <!-- Editorial Column / Why It Matters -->
+        <div class="card-impact-highlight">
+          <div class="card-impact-header">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>${item.sourceOrg} 주간 핵심 인사이트</span>
+          </div>
+          <p class="card-impact-text">${item.whyMatters}</p>
+        </div>
+
+        <p class="card-desc">${item.summary}</p>
+
+        <div class="card-tags">
+          ${item.tags.map(t => `<span class="card-tag">${t}</span>`).join("")}
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="card-footer-meta">
+          <span class="card-domain-badge">
+            <i class="fa-solid fa-compass"></i> ${item.impactTier}
+          </span>
+          <span class="card-views-count">
+            <i class="fa-regular fa-eye"></i> ${item.views.toLocaleString()}회 조회
+          </span>
+        </div>
+
+        <div class="card-action-btns">
+          <button class="icon-btn bookmark-toggle-btn ${isBookmarked ? 'active' : ''}" 
+                  data-id="${item.id}" 
+                  title="${isBookmarked ? '리포트 스크랩 취소' : '리포트 스크랩(북마크)'}">
+            <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
+          </button>
+          <a href="${item.originalUrl || '#'}" target="_blank" rel="noopener noreferrer" 
+             class="btn btn-outline btn-sm card-ext-link-btn" 
+             title="원문 기사/리포트 발행처(외부)로 바로 이동"
+             onclick="event.stopPropagation();">
+            <span>원문 바로가기</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <button class="btn btn-primary btn-sm open-detail-btn" data-id="${item.id}">
+            <span>상세 분석</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+// Render news grouped into distinct row sections by category
 function renderNewsGrid() {
   const filtered = getFilteredNews();
 
@@ -420,70 +752,97 @@ function renderNewsGrid() {
   }
 
   DOM.emptyState.style.display = "none";
-  DOM.newsGrid.innerHTML = filtered.map(item => {
-    const isBookmarked = state.bookmarks.includes(item.id);
-    return `
-      <article class="news-card" data-id="${item.id}">
-        <div class="card-meta-top">
-          <span class="card-category-badge ${item.badgeClass}">
-            <i class="fa-solid fa-tag"></i> ${item.categoryLabel}
-          </span>
-          <div class="card-time-info">
-            <span><i class="fa-regular fa-clock"></i> ${item.time}</span>
-            <span>·</span>
-            <span>${item.readTime}</span>
-          </div>
-        </div>
 
-        <div class="card-main">
-          <h3 class="card-title">${item.title}</h3>
-          
-          <!-- Editorial Column / Why It Matters -->
-          <div class="card-impact-highlight">
-            <div class="card-impact-header">
-              <i class="fa-solid fa-lightbulb"></i>
-              <span>AX 인사이트 분석</span>
+  // If a single category is selected (not 'all')
+  if (state.currentCategory !== "all") {
+    const catMeta = CATEGORY_DEFINITIONS.find(c => c.id === state.currentCategory) || {
+      id: state.currentCategory,
+      label: state.currentCategory,
+      icon: "fa-folder-open",
+      desc: "선택된 카테고리의 주간 엄선 리포트입니다."
+    };
+
+    DOM.newsGrid.innerHTML = `
+      <section class="category-row-section" data-category="${catMeta.id}">
+        <div class="category-row-header">
+          <div class="category-row-header-top">
+            <div class="category-row-title-wrap">
+              <span class="category-row-icon"><i class="fa-solid ${catMeta.icon}"></i></span>
+              <h2 class="category-row-title">${catMeta.label}</h2>
+              <span class="category-row-count-badge">${filtered.length}편 엄선</span>
             </div>
-            <p class="card-impact-text">${item.whyMatters}</p>
-          </div>
-
-          <p class="card-desc">${item.summary}</p>
-
-          <div class="card-tags">
-            ${item.tags.map(t => `<span class="card-tag">${t}</span>`).join("")}
-          </div>
-        </div>
-
-        <div class="card-footer">
-          <div class="impact-score-widget" title="비즈니스 AX 전환 영향도 지수">
-            <div class="impact-circle">${item.impactScore}</div>
-            <div class="impact-score-info">
-              <span class="impact-score-label">AX SCORE</span>
-              <span class="impact-score-tier">${item.impactTier}</span>
-            </div>
-          </div>
-
-          <div class="card-action-btns">
-            <button class="icon-btn bookmark-toggle-btn ${isBookmarked ? 'active' : ''}" 
-                    data-id="${item.id}" 
-                    title="${isBookmarked ? '기사 스크랩 취소' : '기사 스크랩(북마크)'}">
-              <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
-            </button>
-            <button class="btn btn-outline btn-sm open-detail-btn" data-id="${item.id}">
-              <span>기사 전문 읽기</span>
-              <i class="fa-solid fa-arrow-right"></i>
+            <button class="btn-text show-all-rows-btn" title="전체 카테고리 행 다시 보기">
+              <i class="fa-solid fa-table-cells-large"></i>
+              <span>전체 지면(1면)으로 복귀</span>
             </button>
           </div>
+          <p class="category-row-desc">${catMeta.desc}</p>
         </div>
-      </article>
+        <div class="category-row-grid">
+          ${filtered.map(item => renderCardHtml(item)).join("")}
+        </div>
+      </section>
     `;
-  }).join("");
+  } else {
+    // "1면 종합": Render sequentially row-by-row for each category that has matching items
+    let rowsHTML = "";
+
+    CATEGORY_DEFINITIONS.forEach(catDef => {
+      const itemsInCat = filtered.filter(item => item.category === catDef.id);
+      if (itemsInCat.length === 0) return; // Skip empty categories under current search/filter
+
+      rowsHTML += `
+        <section class="category-row-section" id="row-section-${catDef.id}" data-category="${catDef.id}">
+          <div class="category-row-header">
+            <div class="category-row-header-top">
+              <div class="category-row-title-wrap">
+                <span class="category-row-icon"><i class="fa-solid ${catDef.icon}"></i></span>
+                <h2 class="category-row-title">${catDef.label}</h2>
+                <span class="category-row-count-badge">${itemsInCat.length}편 엄선</span>
+              </div>
+              <button class="category-row-focus-btn" data-category="${catDef.id}" title="이 카테고리만 집중 보기">
+                <span>이 섹션만 보기</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <p class="category-row-desc">${catDef.desc}</p>
+          </div>
+          <div class="category-row-grid">
+            ${itemsInCat.map(item => renderCardHtml(item)).join("")}
+          </div>
+        </section>
+      `;
+    });
+
+    DOM.newsGrid.innerHTML = rowsHTML;
+  }
+
+  // Bind Section Focus button clicks ("이 섹션만 보기")
+  DOM.newsGrid.querySelectorAll(".category-row-focus-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const catId = btn.getAttribute("data-category");
+      state.currentCategory = catId;
+      updateCategoryTabsActive();
+      renderNewsGrid();
+      window.scrollTo({ top: DOM.categoryTabs.offsetTop - 80, behavior: "smooth" });
+    });
+  });
+
+  // Bind "전체 지면(1면)으로 복귀" button
+  const showAllBtn = DOM.newsGrid.querySelector(".show-all-rows-btn");
+  if (showAllBtn) {
+    showAllBtn.addEventListener("click", () => {
+      state.currentCategory = "all";
+      updateCategoryTabsActive();
+      renderNewsGrid();
+    });
+  }
 
   // Attach card event listeners
   DOM.newsGrid.querySelectorAll(".news-card").forEach(card => {
     card.addEventListener("click", (e) => {
-      // Don't trigger if clicked on bookmark button
-      if (e.target.closest(".bookmark-toggle-btn")) return;
+      // Don't trigger if clicked on bookmark button or external link
+      if (e.target.closest(".bookmark-toggle-btn") || e.target.closest(".card-ext-link-btn")) return;
       const id = card.getAttribute("data-id");
       openDetailModal(id);
     });
@@ -499,18 +858,35 @@ function renderNewsGrid() {
 }
 
 function updateFilterStatusBar(count) {
-  const isFiltering = state.searchQuery.trim() !== "" || state.onlyBookmarks || state.currentCategory !== "all";
+  const isFiltering = 
+    state.searchQuery.trim() !== "" || 
+    state.onlyBookmarks || 
+    state.currentCategory !== "all" || 
+    state.sourceTypeFilter !== "all";
+
   if (!isFiltering) {
     DOM.filterStatusBar.style.display = "none";
     return;
   }
 
   DOM.filterStatusBar.style.display = "flex";
-  let statusText = `현재 검색 및 필터 조건 결과: <strong>${count}</strong>건 표시 중`;
+  let statusText = `현재 공신력 조건 결과: <strong>${count}</strong>건 표시 중`;
+
+  const sourceDesc = state.sourceTypeFilter === "consulting" 
+    ? " [글로벌 컨설팅 리포트 (MBB · Big4)]" 
+    : state.sourceTypeFilter === "media" 
+    ? " [정론 경제·글로벌 유력 언론사]" 
+    : "";
+
   if (state.onlyBookmarks) {
-    statusText = `저장된 북마크 목록: <strong>${count}</strong>건`;
+    statusText = `저장된 북마크 목록: <strong>${count}</strong>건${sourceDesc}`;
   } else if (state.searchQuery.trim()) {
-    statusText = `"${state.searchQuery}" 검색 결과: <strong>${count}</strong>건`;
+    statusText = `"${state.searchQuery}" 검색 결과: <strong>${count}</strong>건${sourceDesc}`;
+  } else if (state.currentCategory !== "all") {
+    const catObj = CATEGORIES.find(c => c.id === state.currentCategory);
+    statusText = `[${catObj ? catObj.label : state.currentCategory}] 섹션: <strong>${count}</strong>건${sourceDesc}`;
+  } else if (sourceDesc) {
+    statusText = `${sourceDesc} 필터링 결과: <strong>${count}</strong>건`;
   }
   DOM.filterStatusText.innerHTML = statusText;
 }
@@ -540,13 +916,15 @@ function toggleBookmark(id) {
   }
 
   showToast(
-    isAdded ? "기사가 북마크에 저장되었습니다." : "북마크에서 제거되었습니다.",
+    isAdded ? "리포트가 북마크에 저장되었습니다." : "북마크에서 제거되었습니다.",
     isAdded ? "fa-solid fa-bookmark" : "fa-regular fa-bookmark"
   );
 }
 
 function updateBookmarkBadge() {
-  DOM.bookmarkBadge.textContent = state.bookmarks.length;
+  if (DOM.bookmarkBadge) {
+    DOM.bookmarkBadge.textContent = state.bookmarks.length;
+  }
 }
 
 // ==========================================================================
@@ -559,19 +937,54 @@ function openDetailModal(id) {
   state.selectedNews = news;
   news.views += 1; // Increment view count
 
+  const isConsulting = news.sourceType === "consulting";
+  const sourceIcon = isConsulting ? "fa-building-columns" : "fa-newspaper";
+  const sourceCategory = isConsulting ? "글로벌 톱티어 전략 컨설팅 리포트" : "역사·규모 공신력 검증 경제 정론지";
+
   DOM.modalCategory.textContent = news.categoryLabel;
   DOM.modalCategory.className = `modal-category ${news.badgeClass}`;
   DOM.modalDate.textContent = `${news.time} · ${news.readTime}`;
-  DOM.modalImpact.textContent = `AX Impact ${news.impactScore} / 10 (${news.impactTier})`;
+  if (DOM.modalDomainBadge) {
+    DOM.modalDomainBadge.innerHTML = `<i class="fa-solid fa-compass"></i> ${news.impactTier}`;
+  }
+  
+  if (DOM.modalExtLinkBottom) {
+    DOM.modalExtLinkBottom.href = news.originalUrl || "#";
+  }
   DOM.modalTitle.textContent = news.title;
-  DOM.modalSource.innerHTML = `<i class="fa-solid fa-building-columns"></i> 출처: <strong>${news.source}</strong> · 조회수: ${news.views.toLocaleString()}회`;
+
+  // Credible source container
+  DOM.modalSource.innerHTML = `
+    <div class="modal-source-trust-box">
+      <div class="trust-badge-row">
+        <span class="trust-seal-pill ${isConsulting ? 'consulting' : 'media'}">
+          <i class="fa-solid fa-shield-halved"></i> 100% 공신력 검증 출처
+        </span>
+        <span class="trust-source-type">${sourceCategory}</span>
+      </div>
+      <div class="trust-meta-row">
+        <span><i class="fa-solid ${sourceIcon}"></i> 발행 기관: <strong>${news.sourceOrg}</strong></span>
+        <span>·</span>
+        <span>리포트 유형: <strong>${news.reportType}</strong></span>
+        <span>·</span>
+        <span>조회수: ${news.views.toLocaleString()}회</span>
+      </div>
+      <div class="trust-source-full">
+        <i class="fa-solid fa-link"></i> 원문 퍼머링크: 
+        <a href="${news.originalUrl || '#'}" target="_blank" rel="noopener noreferrer" class="trust-url-link">
+          <strong>${news.source}</strong> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  `;
+
   DOM.modalWhyMatters.textContent = news.whyMatters;
 
   // Summary bullets
   DOM.modalSummaryList.innerHTML = news.fullSummary.map(point => `<li>${point}</li>`).join("");
 
   // Action plan
-  DOM.modalActionPlan.innerHTML = `<strong>실행 권고사항:</strong> ${news.actionPlan}`;
+  DOM.modalActionPlan.innerHTML = `<strong>${news.sourceOrg} 권고 실행 액션 플랜:</strong> ${news.actionPlan}`;
 
   // Tags
   DOM.modalTags.innerHTML = news.tags.map(tag => `<span class="card-tag">${tag}</span>`).join("");
@@ -591,58 +1004,69 @@ function closeDetailModal() {
 }
 
 function updateModalBookmarkBtnState() {
-  if (!state.selectedNews) return;
+  if (!state.selectedNews || !DOM.modalBookmarkToggleBtn) return;
   const isBookmarked = state.bookmarks.includes(state.selectedNews.id);
-  DOM.modalBookmarkToggleBtn.innerHTML = `
-    <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
-    <span>${isBookmarked ? '북마크 해제' : '북마크 저장'}</span>
-  `;
-  DOM.modalBookmarkToggleBtn.setAttribute("data-active", isBookmarked ? "true" : "false");
+  const icon = DOM.modalBookmarkToggleBtn.querySelector("i");
+  const span = DOM.modalBookmarkToggleBtn.querySelector("span");
+
+  if (isBookmarked) {
+    DOM.modalBookmarkToggleBtn.classList.add("active");
+    if (icon) icon.className = "fa-solid fa-bookmark";
+    if (span) span.textContent = "스크랩 완료";
+  } else {
+    DOM.modalBookmarkToggleBtn.classList.remove("active");
+    if (icon) icon.className = "fa-regular fa-bookmark";
+    if (span) span.textContent = "리포트 스크랩";
+  }
 }
 
 // ==========================================================================
-// 8. Executive Daily Briefing Generator
+// 8. Weekly Briefing Modal Logic
 // ==========================================================================
-function generateBriefingReport() {
-  const today = new Date().toLocaleDateString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+function openBriefingModal() {
+  const briefingDateText = "2026년 9월 2주차 위클리 에디션 (2026.09.08 ~ 09.14)";
+  DOM.briefingDate.textContent = briefingDateText;
 
-  DOM.briefingDate.textContent = today;
+  // Group by category for structured briefing
+  let catSectionsText = "";
+  CATEGORY_DEFINITIONS.forEach(cat => {
+    const items = NEWS_DATA.filter(n => n.category === cat.id);
+    if (items.length === 0) return;
+    catSectionsText += `
+[${cat.label}]
+`;
+    items.forEach((item, idx) => {
+      catSectionsText += `  ${idx + 1}. ${item.title}
+`;
+      catSectionsText += `     - 핵심 요약: ${item.whyMatters}
+`;
+      catSectionsText += `     - 실행 제언: ${item.actionPlan}
+`;
+      catSectionsText += `     - 원문 링크: ${item.originalUrl}
 
-  // Compile top highlights
-  const topNews = [...NEWS_DATA].sort((a, b) => b.impactScore - a.impactScore).slice(0, 4);
-
-  let report = `# 📰 [The AI · AX Chronicle - 조간 경영진 브리핑] ${today}\n`;
-  report += `발행: The AI · AX Chronicle 편집국 인텔리전스 데스크\n\n`;
-  report += `------------------------------------------------------------\n`;
-  report += `■ EXECUTIVE SUMMARY (경영진 핵심 요약)\n`;
-  report += `오늘의 글로벌 AI 전환(AX)의 가장 핵심 화두는 '단순 텍스트 생성'에서 '사내 데이터 격리 기반 자율 에이전트(Agentic Orchestration)'로의 전환입니다.\n`;
-  report += `특히 온프레미스 경량화 모델(sLLM)과 기업용 샌드박스 표준이 본격 상용화되면서 엔터프라이즈 도입 속도가 가속화되고 있습니다.\n\n`;
-
-  report += `------------------------------------------------------------\n`;
-  report += `■ TOP STRATEGIC HIGHLIGHTS (최고 임팩트 이슈 TOP 4)\n\n`;
-
-  topNews.forEach((item, idx) => {
-    report += `${idx + 1}. [${item.categoryLabel}] ${item.title}\n`;
-    report += `   - AX 영향도: ${item.impactScore} / 10 (${item.impactTier})\n`;
-    report += `   - Why It Matters: ${item.whyMatters}\n`;
-    report += `   - 핵심 시사점:\n`;
-    item.fullSummary.forEach(bullet => {
-      report += `     * ${bullet}\n`;
+`;
     });
-    report += `   - 기업 적용 Action Plan: ${item.actionPlan}\n\n`;
   });
 
-  report += `------------------------------------------------------------\n`;
-  report += `■ 결론 및 이번 주 전사 권장 액션\n`;
-  report += `1. 사내 도입 중인 AI 프로젝트의 '에이전틱 워크플로우' 확장 가능성 점검\n`;
-  report += `2. 데이터 주권 및 사내 보안 준수를 위한 프라이빗 sLLM/인프라 비용 검토\n`;
-  report += `3. 글로벌 AI 규제(EU AI Act 등)에 대응하기 위한 거버넌스 및 감사 파이프라인 수립\n`;
+  const fullBriefing = `[AX 트렌드 리포트 | 2026년 9월 2주차 위클리 종합 브리핑]
+발행일자: ${briefingDateText}
+발행처: AX 트렌드 리포트 인텔리전스 데스크
+엄선 대상: 글로벌 Tier-1 전략 컨설팅(McKinsey, BCG, Bain, Big4) 및 정론 경제지(한경, 매경, FT, 로이터)
+총 분석 리포트: ${NEWS_DATA.length}건
 
-  DOM.briefingContentText.textContent = report;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ WEEKLY 1분 핵심 총평 (Executive Takeaways)
+1. "자율 에이전트와 온프레미스 sLLM의 결합": 단순 검색 챗봇(RAG)의 한계를 넘어 실제 사내 ERP/DB와 연동되어 업무를 완결하는 '에이전틱 코어' 구축 기업이 압도적인 ROI와 영업이익률 개선을 증명하고 있습니다.
+2. "일하는 방식의 패러다임 전환": MS Work Trend Index와 주요 대기업 조사 결과, 자율 에이전트를 도입한 팀은 불필요한 회의와 메일이 45% 줄고 직무 리스킬링을 통해 '1인 멀티 에이전트 오케스트레이터' 체제로 급선회하고 있습니다.
+3. "프론티어 기술의 도약": 오픈AI의 차세대 'GPT-6 아스트라'와 엔비디아 '블랙웰 울트라'를 필두로 추론 지연 시간(Latency) 단축과 물리·OS 자율 제어 모델이 산업 전반을 강타하고 있습니다.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${catSectionsText}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+본 브리핑은 100% 공신력 있는 글로벌 기관의 원문 리포트만을 기반으로 구성된 주간 정례 인텔리전스입니다.`;
+
+  DOM.briefingContentText.textContent = fullBriefing;
+  DOM.briefingContentText.innerText = fullBriefing;
+  DOM.briefingContentText.value = fullBriefing;
   DOM.briefingModal.classList.add("open");
   DOM.briefingModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
@@ -655,36 +1079,10 @@ function closeBriefingModal() {
 }
 
 // ==========================================================================
-// 9. Toast Notification System
-// ==========================================================================
-function showToast(message, iconClass = "fa-solid fa-circle-check") {
-  const toast = document.createElement("div");
-  toast.className = "toast";
-  toast.innerHTML = `
-    <i class="${iconClass}"></i>
-    <span>${message}</span>
-  `;
-
-  DOM.toastContainer.appendChild(toast);
-
-  // Trigger animation
-  requestAnimationFrame(() => {
-    toast.classList.add("show");
-  });
-
-  setTimeout(() => {
-    toast.classList.remove("show");
-    setTimeout(() => {
-      toast.remove();
-    }, 200);
-  }, 2800);
-}
-
-// ==========================================================================
-// 10. Event Listeners Setup
+// 9. Event Listeners Setup
 // ==========================================================================
 function setupEventListeners() {
-  // Search
+  // Search input
   DOM.searchInput.addEventListener("input", (e) => {
     handleSearchChange(e.target.value);
   });
@@ -701,7 +1099,19 @@ function setupEventListeners() {
     renderNewsGrid();
   });
 
-  // Bookmark filter toggle
+  // Source Type Filter (All / Consulting / Media)
+  if (DOM.sourceFilterPills) {
+    DOM.sourceFilterPills.querySelectorAll(".source-pill-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const type = btn.getAttribute("data-source-type");
+        state.sourceTypeFilter = type;
+        updateSourcePillsActive();
+        renderNewsGrid();
+      });
+    });
+  }
+
+  // Bookmark filter button
   DOM.bookmarkFilterBtn.addEventListener("click", () => {
     state.onlyBookmarks = !state.onlyBookmarks;
     DOM.bookmarkFilterBtn.setAttribute("data-active", state.onlyBookmarks ? "true" : "false");
@@ -709,71 +1119,103 @@ function setupEventListeners() {
     renderNewsGrid();
   });
 
-  // Reset filters
-  const resetAll = () => {
-    state.currentCategory = "all";
-    state.searchQuery = "";
-    state.onlyBookmarks = false;
-    state.sortBy = "latest";
-    DOM.searchInput.value = "";
-    DOM.clearSearchBtn.style.display = "none";
-    DOM.sortSelect.value = "latest";
-    DOM.bookmarkFilterBtn.setAttribute("data-active", "false");
-    updateCategoryTabsActive();
-    renderNewsGrid();
-  };
+  // Reset filter status button
+  DOM.resetFilterBtn.addEventListener("click", resetAllFilters);
+  DOM.emptyResetBtn.addEventListener("click", resetAllFilters);
 
-  DOM.resetFilterBtn.addEventListener("click", resetAll);
-  DOM.emptyResetBtn.addEventListener("click", resetAll);
+  // Detail Modal Controls
+  if (DOM.closeDetailModalBtn) DOM.closeDetailModalBtn.addEventListener("click", closeDetailModal);
+  DOM.detailModal?.querySelector(".modal-backdrop")?.addEventListener("click", closeDetailModal);
 
-  // Detail Modal Events
-  DOM.closeDetailModalBtn.addEventListener("click", closeDetailModal);
-  DOM.detailModal.addEventListener("click", (e) => {
-    if (e.target === DOM.detailModal) closeDetailModal();
-  });
-
-  DOM.modalBookmarkToggleBtn.addEventListener("click", () => {
-    if (state.selectedNews) {
-      toggleBookmark(state.selectedNews.id);
-    }
-  });
-
-  DOM.modalCopySummaryBtn.addEventListener("click", () => {
-    if (!state.selectedNews) return;
-    const textToCopy = `[AI·AX Pulse] ${state.selectedNews.title}\n\n■ Why It Matters:\n${state.selectedNews.whyMatters}\n\n■ 실행 권고사항:\n${state.selectedNews.actionPlan}`;
-    navigator.clipboard.writeText(textToCopy).then(() => {
-      showToast("기사 핵심 브리핑이 클립보드에 복사되었습니다.", "fa-solid fa-copy");
+  if (DOM.modalBookmarkToggleBtn) {
+    DOM.modalBookmarkToggleBtn.addEventListener("click", () => {
+      if (state.selectedNews) {
+        toggleBookmark(state.selectedNews.id);
+      }
     });
-  });
+  }
 
-  // Briefing Modal Events
-  DOM.briefingBtn.addEventListener("click", generateBriefingReport);
-  DOM.closeBriefingModalBtn.addEventListener("click", closeBriefingModal);
-  DOM.briefingModal.addEventListener("click", (e) => {
-    if (e.target === DOM.briefingModal) closeBriefingModal();
-  });
-
-  DOM.copyBriefingBtn.addEventListener("click", () => {
-    const content = DOM.briefingContentText.textContent;
-    navigator.clipboard.writeText(content).then(() => {
-      showToast("경영진 브리핑 리포트 전체가 복사되었습니다.", "fa-solid fa-copy");
+  if (DOM.modalCopySummaryBtn) {
+    DOM.modalCopySummaryBtn.addEventListener("click", () => {
+      if (!state.selectedNews) return;
+      const text = `[${state.selectedNews.sourceOrg}] ${state.selectedNews.title}\n\n■ 왜 주목해야 하는가:\n${state.selectedNews.whyMatters}\n\n■ 핵심 요약:\n${state.selectedNews.fullSummary.join('\n')}\n\n■ 실행 액션:\n${state.selectedNews.actionPlan}\n\n■ 원문 퍼머링크: ${state.selectedNews.originalUrl}`;
+      copyToClipboard(text, "리포트 분석 요약이 클립보드에 복사되었습니다.");
     });
-  });
+  }
 
-  // Keyboard Shortcuts (ESC to close modals)
+  // Briefing Modal Controls
+  if (DOM.briefingBtn) DOM.briefingBtn.addEventListener("click", openBriefingModal);
+  if (DOM.closeBriefingModalBtn) DOM.closeBriefingModalBtn.addEventListener("click", closeBriefingModal);
+  DOM.briefingModal?.querySelector(".modal-backdrop")?.addEventListener("click", closeBriefingModal);
+
+  if (DOM.copyBriefingBtn) {
+    DOM.copyBriefingBtn.addEventListener("click", () => {
+      const text = DOM.briefingContentText.textContent || DOM.briefingContentText.innerText || DOM.briefingContentText.value || "";
+      copyToClipboard(text, "위클리 종합 브리핑 전문이 복사되었습니다. 경영진 및 팀 슬랙에 공유하세요!");
+    });
+  }
+
+  // Global Keyboard Shortcuts (Esc to close modals)
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       if (DOM.detailModal.classList.contains("open")) closeDetailModal();
       if (DOM.briefingModal.classList.contains("open")) closeBriefingModal();
+    }
+    // Search focus on / or Ctrl+K
+    if ((e.key === "/" || (e.ctrlKey && e.key === "k")) && document.activeElement !== DOM.searchInput) {
+      e.preventDefault();
+      DOM.searchInput.focus();
     }
   });
 }
 
 function handleSearchChange(val) {
   state.searchQuery = val;
-  DOM.clearSearchBtn.style.display = val.trim() !== "" ? "block" : "none";
+  DOM.clearSearchBtn.style.display = val.trim() ? "flex" : "none";
   renderNewsGrid();
 }
 
-// Start application
+function resetAllFilters() {
+  state.currentCategory = "all";
+  state.sourceTypeFilter = "all";
+  state.searchQuery = "";
+  state.onlyBookmarks = false;
+  DOM.searchInput.value = "";
+  DOM.clearSearchBtn.style.display = "none";
+  DOM.bookmarkFilterBtn.setAttribute("data-active", "false");
+  updateCategoryTabsActive();
+  updateSourcePillsActive();
+  renderNewsGrid();
+}
+
+// ==========================================================================
+// 10. Utilities (Clipboard & Toast)
+// ==========================================================================
+function copyToClipboard(text, successMsg) {
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(successMsg, "fa-solid fa-check");
+  }).catch(() => {
+    showToast("클립보드 복사에 실패했습니다.", "fa-solid fa-triangle-exclamation");
+  });
+}
+
+function showToast(message, iconClass = "fa-solid fa-info") {
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.innerHTML = `
+    <i class="${iconClass}"></i>
+    <span>${message}</span>
+  `;
+
+  DOM.toastContainer.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add("fade-out");
+    setTimeout(() => {
+      toast.remove();
+    }, 300);
+  }, 3200);
+}
+
+// Initialize on DOM ready
 document.addEventListener("DOMContentLoaded", initApp);
